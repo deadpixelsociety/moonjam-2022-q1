@@ -1,0 +1,189 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Even before I was in the room, I could hear Jesse's voice echoing through the foyer."
+		},
+		{
+			"action": "join",
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			}
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And that's why it's better and more efficient to call that type of behavior \"sus.\""
+		},
+		{
+			"action": "join",
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jesse... well, you're right. It is shorter and easier to say. You've got me there."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "New blood versus the old guard. New blood wins. Never would have dreamed it."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well kid, your first day on the job and you've won an argument with her, and I don't think I've done it in all my years."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "She turned, ignoring the comment, and glad for the distraction. Felt good to know that after all this time I could still get under her skin."
+		},
+		{
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Get anything out of the cook?"
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Try the spring rolls?"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Not much, and hell no. Only thing I know is that he was here all night filming an episode of his cooking show, and he said he didn't hear a damn thing. Nobody coming in or out, and didn't mention the noise from upstairs."
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That's... a little sus, I'd say. Wouldn't you sis?"
+		},
+		{
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...\n\nNo. I wouldn't."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Call it what you want, but it sure as hell was."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Problem is, guy doesn't have a motive. He was pulling in a check from Thoroughbred with one hand and scooping up YouTube bucks with the other. Why would he throw that away? Killing Thoroughbred was slaughtering the goose that lay his golden eggs."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Besides, if there's anybody who doesn't know how to cut a bird, it's this chump."
+		},
+		{
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Murder can be a crime of passion. Doesn't always need a reason, just a moment."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "She had me there."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Either way, if he's telling the truth, and the killer didn't make a noise coming in or out, then the perp could be among us somewhere."
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "!!!"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Who else have we got around here?"
+		},
+		{
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The groundskeeper. He's been staying outside."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "On a day like today? Pretty cruel to leave him there."
+		},
+		{
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That's not exactly what I mean. We've already asked him some questions. Go on out to the estate grounds, you'll know him when you see him."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Don't mind if I do. I'll see if he knows anything."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641710543.json",
+		"name": "foyer-2"
+	}
+}

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interactables/interactable_object.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interactables/left_fence_interactable.tres" type="Resource" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 40.0
+height = 460.0
+
+[node name="LeftFenceObject" instance=ExtResource( 1 )]
+interactable = ExtResource( 2 )
+
+[node name="Tooltip" parent="." index="1"]
+text = "Left Fence"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+rotation = -1.5708
+shape = SubResource( 1 )

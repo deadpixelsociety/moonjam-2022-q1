@@ -4,6 +4,7 @@ class_name Intro
 
 func _ready():
 	Audio.play_investigation_theme()
+	GameState.state = GameState.STATE.ROOM_INTRO
 
 
 func _on_Intro_scene_ready():
@@ -13,5 +14,4 @@ func _on_Intro_scene_ready():
 
 
 func _on_timeline_end(timeline_name: String):
-	yield(fade_out(), "completed")
-	Main.switch_scene("res://scenes/manor_front.tscn")
+	goto_scene("res://scenes/manor_front.tscn")

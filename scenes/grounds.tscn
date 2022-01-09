@@ -1,10 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/grounds.gd" type="Script" id=1]
 [ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/scenes/grounds/grounds.png" type="Texture" id=3]
 [ext_resource path="res://assets/gfx/small_light.png" type="Texture" id=4]
 [ext_resource path="res://assets/gfx/large_light.png" type="Texture" id=5]
+[ext_resource path="res://interactables/pool_object.tscn" type="PackedScene" id=6]
+[ext_resource path="res://interactables/trees_object.tscn" type="PackedScene" id=7]
+[ext_resource path="res://interactables/path_object.tscn" type="PackedScene" id=8]
+[ext_resource path="res://interactables/camp_object.tscn" type="PackedScene" id=9]
+[ext_resource path="res://interactables/tent_object.tscn" type="PackedScene" id=10]
+[ext_resource path="res://interactables/left_fence_object.tscn" type="PackedScene" id=11]
+[ext_resource path="res://interactables/right_fence_object.tscn" type="PackedScene" id=12]
 
 [node name="Grounds" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
@@ -61,5 +68,41 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="PoolObject" parent="Layers/MiddleObjects/Interactables" index="0" instance=ExtResource( 6 )]
+position = Vector2( -344, -91 )
+
+[node name="TreesObject" parent="Layers/MiddleObjects/Interactables" index="1" instance=ExtResource( 7 )]
+position = Vector2( 476, -128 )
+
+[node name="PathObject" parent="Layers/MiddleObjects/Interactables" index="2" instance=ExtResource( 8 )]
+position = Vector2( -276, 200 )
+
+[node name="CampObject" parent="Layers/MiddleObjects/Interactables" index="3" instance=ExtResource( 9 )]
+position = Vector2( 96, 34 )
+
+[node name="TentObject" parent="Layers/MiddleObjects/Interactables" index="4" instance=ExtResource( 10 )]
+position = Vector2( 402, 46 )
+
+[node name="LeftFenceObject" parent="Layers/MiddleObjects/Interactables" index="5" instance=ExtResource( 11 )]
+position = Vector2( -385, -200 )
+
+[node name="RightFenceObject" parent="Layers/MiddleObjects/Interactables" index="6" instance=ExtResource( 12 )]
+position = Vector2( 462, -200 )
+
 [node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
 title = "THE GROUNDS"
+
+[node name="LocationList" parent="Overlay/OverlayContainer" index="3"]
+margin_left = -46.0
+margin_top = -21.5
+margin_right = 46.0
+margin_bottom = 21.5
+rect_pivot_offset = Vector2( 46, 21 )
+
+[node name="GoFoyer" type="Button" parent="Overlay/OverlayContainer/LocationList" index="0"]
+margin_right = 92.0
+margin_bottom = 43.0
+text = "FOYER"
+
+[connection signal="scene_ready" from="." to="." method="_on_Grounds_scene_ready"]
+[connection signal="pressed" from="Overlay/OverlayContainer/LocationList/GoFoyer" to="." method="_on_GoFoyer_pressed"]

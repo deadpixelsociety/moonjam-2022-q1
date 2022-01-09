@@ -1,0 +1,29 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, now I knew what I'd used to kill him. I had to get up to that office and find where I'd ditched it, so I could dispose of it properly. Just had to convince the force to let me up.\nBut first, I was going to make sure I hadn't left anything behind."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641757875.json",
+		"name": "grounds-1-stevem-finished"
+	}
+}

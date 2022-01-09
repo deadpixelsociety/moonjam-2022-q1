@@ -157,7 +157,7 @@ func focusout():
 	if single_portrait_mode:
 		alpha = 0
 	if not fading_out:
-		tween_modulate(modulate, Color(0.5,0.5,0.5, alpha))
+		tween_modulate(modulate, Color(0.2,0.2,0.2, alpha))
 		var _parent = get_parent()
 		if _parent:
 			# Render this portrait first

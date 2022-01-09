@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://interactables/trees_interactable.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+interactable_name = "Trees"
+timeline_name = "grounds-1-trees"
+color = Color( 0.156863, 0.466667, 0.0823529, 1 )

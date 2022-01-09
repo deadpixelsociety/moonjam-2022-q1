@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://interactables/tent_interactable.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+interactable_name = "Tent"
+timeline_name = "grounds-1-tent"
+color = Color( 0.0980392, 0.74902, 0.309804, 1 )

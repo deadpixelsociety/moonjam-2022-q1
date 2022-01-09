@@ -3,6 +3,7 @@ extends Node2D
 onready var _scene_container := $SceneContainer
 onready var _vignette := $VignetteLayer/Vignette
 onready var _film_grain := $GrainLayer/Grain
+onready var _ui_layer := $UILayer
 
 
 func enable_fullscreen():
@@ -31,6 +32,19 @@ func enable_film_grain():
 
 func disable_film_grain():
 	_film_grain.visible = false
+
+
+func switch_ui(path: String):
+	var scene = load(path) as PackedScene
+	switch_ui_to(scene)
+
+
+func switch_ui_to(scene: PackedScene):
+	if _ui_layer.get_child_count() > 0:
+		var child = _ui_layer.get_child(0)
+		if child:
+			child.queue_free()
+	_ui_layer.add_child(scene.instance())
 
 
 func switch_scene(path: String):

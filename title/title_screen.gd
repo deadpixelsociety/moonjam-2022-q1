@@ -3,11 +3,12 @@ class_name TitleScreen
 
 
 func _on_StartGame_pressed():
-	Main.switch_scene("res://scenes/foyer.tscn")
+	Main.switch_scene("res://scenes/grounds.tscn")
+	queue_free()
 
 
 func _on_Settings_pressed():
-	Main.switch_scene("res://settings/settings_screen.tscn")
+	Main.switch_ui("res://settings/settings_screen.tscn")
 
 
 func _on_Quit_pressed():

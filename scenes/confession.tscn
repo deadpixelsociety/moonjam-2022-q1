@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/confession.gd" type="Script" id=1]
+[ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=2]
+
+[node name="Confession" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+show_map = false
+show_leave = false
+
+[node name="Layers" parent="." index="1"]
+modulate = Color( 1, 1, 1, 1 )
+
+[node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
+title = "INNER DEMON"
+
+[connection signal="scene_ready" from="." to="." method="_on_Confession_scene_ready"]

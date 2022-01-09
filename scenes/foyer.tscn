@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/foyer.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/gfx/small_light.png" type="Texture" id=4]
 [ext_resource path="res://characters/booba.tscn" type="PackedScene" id=5]
 [ext_resource path="res://characters/jesse_anime.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/theme.tres" type="Theme" id=7]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( 63, -358, 62, -339, 51, -334, 49, -112, 35, -115, 32, -358 )
@@ -68,12 +69,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Characters" type="Node2D" parent="Layers/MiddleObjects" index="0"]
-visible = false
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="Booba" parent="Layers/MiddleObjects/Characters" index="0" instance=ExtResource( 5 )]
 position = Vector2( 190, -30 )
 
@@ -83,4 +78,44 @@ position = Vector2( 390, -30 )
 [node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
 title = "THE FOYER"
 
+[node name="LocationList" parent="Overlay/OverlayContainer" index="3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -280.5
+margin_top = -21.5
+margin_right = 280.5
+margin_bottom = 21.5
+rect_pivot_offset = Vector2( 280, 21 )
+theme = ExtResource( 7 )
+alignment = 1
+
+[node name="GoKitchen" type="Button" parent="Overlay/OverlayContainer/LocationList" index="0"]
+margin_right = 119.0
+margin_bottom = 43.0
+text = "KITCHEN"
+
+[node name="GoUpstairs" type="Button" parent="Overlay/OverlayContainer/LocationList" index="1"]
+margin_left = 151.0
+margin_right = 283.0
+margin_bottom = 43.0
+text = "UPSTAIRS"
+
+[node name="GoFront" type="Button" parent="Overlay/OverlayContainer/LocationList" index="2"]
+margin_left = 315.0
+margin_right = 405.0
+margin_bottom = 43.0
+text = "FRONT"
+
+[node name="GoGrounds" type="Button" parent="Overlay/OverlayContainer/LocationList" index="3"]
+margin_left = 437.0
+margin_right = 561.0
+margin_bottom = 43.0
+text = "GROUNDS"
+
 [connection signal="scene_ready" from="." to="." method="_on_Foyer_scene_ready"]
+[connection signal="pressed" from="Overlay/OverlayContainer/LocationList/GoKitchen" to="." method="_on_GoKitchen_pressed"]
+[connection signal="pressed" from="Overlay/OverlayContainer/LocationList/GoUpstairs" to="." method="_on_GoUpstairs_pressed"]
+[connection signal="pressed" from="Overlay/OverlayContainer/LocationList/GoFront" to="." method="_on_GoFront_pressed"]
+[connection signal="pressed" from="Overlay/OverlayContainer/LocationList/GoGrounds" to="." method="_on_GoGrounds_pressed"]

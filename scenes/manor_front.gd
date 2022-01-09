@@ -46,11 +46,8 @@ func fade_out():
 
 
 func _on_ManorFront_scene_ready():
-	var dialogic = Dialogic.start("manor_front")
-	dialogic.connect("timeline_end", self, "_on_timeline_end")
-	get_tree().root.call_deferred("add_child", dialogic)
+	start_dialogue("manor_front")
 
 
 func _on_timeline_end(timeline_name: String):
-	yield(fade_out(), "completed")
-	Main.switch_scene("res://scenes/foyer.tscn")
+	goto_scene("res://scenes/foyer.tscn")

@@ -1,0 +1,20 @@
+{
+	"color": "#ffda20e0",
+	"description": "",
+	"display_name": "?????",
+	"display_name_bool": true,
+	"id": "character-1641683080.json",
+	"mirror_portraits": true,
+	"name": "Jesse Unknown",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -100,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/characters/jesse/jesse_silhouette.png"
+		}
+	],
+	"scale": 100
+}

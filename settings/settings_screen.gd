@@ -33,7 +33,7 @@ func _get_values():
 func _on_Apply_pressed():
 	Settings.save_settings()
 	Settings.apply_settings()
-	Main.switch_scene("res://title/title_screen.tscn")
+	Main.switch_ui("res://title/title_screen.tscn")
 
 
 func _on_MasterVolumeDec_pressed():

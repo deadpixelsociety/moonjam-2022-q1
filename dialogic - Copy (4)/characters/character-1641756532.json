@@ -1,0 +1,20 @@
+{
+	"color": "#ff1c8107",
+	"description": "",
+	"display_name": "?????",
+	"display_name_bool": true,
+	"id": "character-1641756532.json",
+	"mirror_portraits": true,
+	"name": "Stevem Unknown",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -100,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/characters/stevem/stevem_silhouette.png"
+		}
+	],
+	"scale": 100
+}

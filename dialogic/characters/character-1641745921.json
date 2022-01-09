@@ -1,0 +1,20 @@
+{
+	"color": "#ff91db25",
+	"description": "Pussa Bitch",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1641745921.json",
+	"mirror_portraits": false,
+	"name": "Maximilian Thoroughbred",
+	"nickname": "Yung Dab,Dab,Max,Maximilian,Thoroughbred Estate,Thoroughbred",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100
+}

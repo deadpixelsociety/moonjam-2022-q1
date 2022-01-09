@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://interactables/interactable_object.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interactables/trees_interactable.tres" type="Resource" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 23.0
+height = 276.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 63.0
+height = 276.0
+
+[node name="TreesObject" instance=ExtResource( 1 )]
+interactable = ExtResource( 2 )
+
+[node name="Tooltip" parent="." index="1"]
+text = "Trees"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+rotation = -1.5708
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." index="3"]
+position = Vector2( 0, -180 )
+rotation = -1.5708
+shape = SubResource( 2 )

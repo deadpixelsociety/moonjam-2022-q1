@@ -1,0 +1,415 @@
+{
+	"events": [
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "So..."
+		},
+		{
+			"choice": "Did you see or hear anything unusual last night?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, absolutely."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Lady luck, you fickle dame. Guess it was about time you stopped giving me the time of day."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Go on."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I hear unusual things out here all the time. Gunshots, cars, wild animals. It's great."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I take it all back."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's... great?"
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sure. Like really surviving out in a warzone in the wilderness behind enemy lines with nothing but my wits and carefully packaged rations to survive."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Does that help?"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Can't say it does. I'm gonna need specifics, Stevem."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh. Well, usually I don't hear much when I'm recording my videos. I get in the survival zone and just tune everything else out."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Right."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You know how soldiers will say that time slows down for them, and some of their senses heighten but others go blank? When I'm tearing into a 2017 Sri Lankan Fettucine Alfredo with a cup of Cinnamon and Nutmeg tea, that's what happens to me. That's when I know I'm alive."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Goddamn. I used to think I was crazy, committed forever to this madhouse asylum of a city. Turns out I was still in the lobby filling out paperwork. The rest of the crazies were still waiting to say hello."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So..."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But even through that, last night was different. Sounded like a wild animal was tearing through the yard next to me. I went outside, but it was pretty dark, on account of being night. So I figured I'd check it out in the morning."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So he heard me."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You sure that's what you heard, Stevem? "
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, you can't be truly sure of anything, out in the wild. I checked outside with a flashlight and my M1-Garand, but didn't actually see anything. You think it was the killer?"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Could have been, yeah. We're still figuring out how the perp got in and out, so we can't jump to conclusions. Like you said, you hear things all the time. Don't want to waste the cop's precious time with bad leads."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sure, sure. Well, after I took Mr. Thoroughbred his dinner, that was all I heard."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hold on..."
+		},
+		{
+			"choice": "You took him his dinner?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sure did. He said he actually wanted to try one of these MREs, so I picked out a good one. The 2019 Bolivian Special Forces 24 Hour Field Ration, Thanksgiving Edition."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "They have Thanksgiving in Bolivia?"
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...Uhh... do they?"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Go on."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyhow, this one was really good, so I ordered a few more off Amazon. They come with reinforced flatware so Bolivian assassins can use them as improvised weaponry in the jungle And the biscuits are flakey, with real butter. Definitely a high quality ration."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay, enough about the ration."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, I took up the tray and meal pack, and showed him how to use the thermal pouch for heating his coffee. He wasn't saying much, just \"thanks dawg\" and \"fa sho.\" Honestly, I was surprised he even wanted to try it, he hadn't been interested before."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mind showing me what one of these meal kits looks like?"
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Stevem's eyes lit up like the city at night, and he ducked into the tent to grab one, then brought it back out. Stainless steel tray, food packaged tight, vacuum sealed. I was almost hungry enough to ask for some, but I had work to do.\nI was about to hand the tray back, and that's when I felt it. My hands, sliding over the edge, gripping it tight.\nI hadn't looked down last night, didn't notice much in the dark, but I wouldn't forget that feeling between my fingers as long as I lived.\nI'd killed Maximilian Thoroughbred with his own goddamn dinner tray.\nI snapped back. Didn't want to act fishy."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alright, that's enough of that."
+		},
+		{
+			"definition": "1641757072-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"change_timeline": "timeline-1641756866.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "How long have you been working for Mr. Thoroughbred?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A few months. He hired me to maintain the grounds."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And he makes you sleep outside?"
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh no, I GET to sleep outside. It's a dream come true! There's space, woods, fresh water, and he even foot the bill for some special collector's rations that I'd been keeping an eye on."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sounds like a sweet deal. "
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It really was. He reached out to me earlier this year and said he liked my videos. Figured he could use a guy with my skillset and appreciation for military history around."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That's two now, huh. Curiosity got the better of me."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh yeah! They're really funny. He's a great comedian."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...Comedian?"
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah. The \"bad chef\" act. Screws up his cooking on purpose, acts like his life is actually depressing. It's really great. Just hilarious."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Right..."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Working for Mr. Thoroughbred, I got to see some of Henry's episodes before they went live, too! Now that was a treat. Mr. Thoroughbred also wanted to see my videos early, too."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Now if that wasn't one of the strangest goddamn things I ever heard. Thoroughbred was keeping a menagerie of YouTubers, cranking out content and giving him a sneak peek. Just the kind of new-money decadence I'd expect from him.\t\t\nI wasn't glad I killed him, but I sure as hell was happy he was dead. Can't imagine what was going on in that twisted skull before I caved it in."
+		},
+		{
+			"change_timeline": "timeline-1641756866.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"choice": "Do you actually live in that tent?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah. It's a fully insulated, military grade--"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Great, yeah, I get it."
+		},
+		{
+			"change_timeline": "timeline-1641756866.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"choice": "What were you just eating?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I heard you eating something before I got here. What was it?"
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, I was just tucking into the 2020 United Arab Emirates..."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You know what, never mind."
+		},
+		{
+			"change_timeline": "timeline-1641756866.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"choice": "That's all, Stevem.",
+			"condition": "",
+			"definition": "1641757072-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thanks for your cooperation, Mr. Ray Evans. Don't go anywhere, we might have more for you later."
+		},
+		{
+			"character": "character-1641756623.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thanks detective. I hope you catch the guy, Mr. Thoroughbred was good to me."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That makes one in a million, kid."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You got it."
+		},
+		{
+			"change_timeline": "timeline-1641757875.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641756866.json",
+		"name": "grounds-1-stevem-questions"
+	}
+}

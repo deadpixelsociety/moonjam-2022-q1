@@ -60,3 +60,11 @@ func _on_SceneCharacterPlacement_mouse_entered():
 func _on_SceneCharacterPlacement_mouse_exited():
 	_highlighted = false
 	modulate = Color.white
+
+
+func _on_SceneCharacterPlacement_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton:
+		if event.pressed and event.button_index == BUTTON_LEFT:
+			var c = character as SceneCharacter
+			if c:
+				c.interact(self)

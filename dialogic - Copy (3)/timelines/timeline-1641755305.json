@@ -1,0 +1,29 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Reality returns with a jolt, like your face hitting cold pavement after the bouncer's had enough of you, and I'm back at the scene of my own crime. Or at least my escape.\nPool chlorine, city smog, and mist, all mingle together in a cloying cocktail, stunting the senses.\nNow that I can see everything, not just dark blurs and devil shadows as I raced past in the murderous dark, I see how lucky I was. It's a miracle I didn't crash into the groundskeeper's tent.\nI need to know what he saw, or heard. And I need to get to my own evidence before the noble uniformed men and women of the Las Borpas PD do.\n"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641755305.json",
+		"name": "grounds-1"
+	}
+}

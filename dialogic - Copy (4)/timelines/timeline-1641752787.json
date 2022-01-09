@@ -1,0 +1,35 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "First thing I saw when I got outside. Didn't want to take a bath and wake up the neighborhood, so I took a hard right. Not gonna be any evidence there, thankfully."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I notice a small water trail leading from the edge of the pool to the groundskeeper's tent. Must have been testing the chlorine levels. Conscientious guy."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641752787.json",
+		"name": "grounds-1-pool"
+	}
+}

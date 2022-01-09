@@ -1,21 +1,16 @@
 extends Scene
 class_name Foyer
 
-onready var _characters := $Layers/MiddleObjects/Characters
+var _go_grounds = false
 
 
-func _get_dialogue() -> String:
-	if not GameState.foyer_dialogue_1:
-		GameState.foyer_dialogue_1 = true
-		return "foyer-1"
-	elif not GameState.foyer_dialogue_2:
-		GameState.foyer_dialogue_2 = true
-		return "foyer-2"
-	return ""
+func start_dialogue(timeline_name: String):
+	_hide_characters()
+	.start_dialogue(timeline_name)
 
 
 func _on_Foyer_scene_ready():
-	if GameState.foyer_dialogue_2:
+	if GameState.is_at_least_state(GameState.STATE.FIND_GROUNDS):
 		_show_characters()
 	else:
 		var dialogue = _get_dialogue()
@@ -27,19 +22,41 @@ func _on_Foyer_scene_ready():
 
 
 func _on_timeline_end(timeline_name: String):
-	if not GameState.visited_location(GameState.LOCATION.KITCHEN):
-		Main.switch_scene("res://scenes/kitchen.tscn")
-	elif GameState.foyer_dialogue_2:
-		_show_characters()
+	if GameState.is_state(GameState.STATE.ROOM_INTRO):
+		goto_scene("res://scenes/kitchen.tscn")
+	if GameState.is_state(GameState.STATE.MET_HENRY):
+		GameState.state = GameState.STATE.FIND_GROUNDS
+	if GameState.is_state(GameState.STATE.FIND_GROUNDS) and _go_grounds:
+		goto_scene("res://scenes/confession.tscn")
+	._on_timeline_end(timeline_name)
 
 
-func _show_characters():
-	var anima = Anima.begin(self, "show_characters")
-	anima.then({
-		node = _characters, 
-		property = "modulate:a",
-		animation = "fade_in",
-		duration = 1.0
-	})
-	anima.set_visibility_strategy(Anima.VISIBILITY.HIDDEN_AND_TRANSPARENT)
-	anima.play()
+func _get_dialogue() -> String:
+	if GameState.is_state(GameState.STATE.ROOM_INTRO):
+		return "foyer-1"
+	elif GameState.is_state(GameState.STATE.MET_HENRY):
+		return "foyer-2"
+	return ""
+
+
+func _on_GoKitchen_pressed():
+	if GameState.is_state(GameState.STATE.FIND_GROUNDS):
+		start_dialogue("foyer-2-go-kitchen")
+
+
+func _on_GoUpstairs_pressed():
+	if GameState.is_state(GameState.STATE.FIND_GROUNDS):
+		start_dialogue("foyer-2-go-upstairs")
+
+
+func _on_GoFront_pressed():
+	if GameState.is_state(GameState.STATE.FIND_GROUNDS):
+		start_dialogue("foyer-2-go-front")
+
+
+func _on_GoGrounds_pressed():
+	if GameState.is_state(GameState.STATE.FIND_GROUNDS):
+		_go_grounds = true
+		start_dialogue("foyer-2-go-grounds")
+
+

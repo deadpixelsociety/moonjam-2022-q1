@@ -1,0 +1,172 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			}
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Need anything, John?"
+		},
+		{
+			"choice": "You were a fan of Thoroughbred... I mean, Yung Dab. Not too broken up about this, are you?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Huh? Oh no, no way. He'll be back."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kid... he's dead. That's why we're here. He's not coming back."
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ever."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Stop asking."
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No way John. Yung Dab ALWAYS comes back. It's like TikTok famous rapper Lil Bussy says:"
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"I'm a real G,\nYou feel me,\nNot even God himself can kill me,\nIller than a pill could ever fuckin heal,"
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cold steel, painless,\nWhen I wield it? Never stainless.\nConceal it and reveal it to seal it,\nDeath only applies when I'm the one who deals it.\""
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You know?"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Did you say \"Lil Bussy?\""
+		},
+		{
+			"change_timeline": "timeline-1641744662.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"choice": "What the hell is all this about \"sus\"?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's short for \"suspicious.\""
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...that's it?"
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maybe it was me being jaded from this damned city. Maybe it's because this whole scene had my gut all twisted up. Maybe it's because I was talking to Jesse goddamn Anime. But I was expecting worse."
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah. If something is up, you say, 'you're acting kinda sus', or 'that guy over there is sus.' It's from popular internet video game--"
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Right, I get it, I get it."
+		},
+		{
+			"change_timeline": "timeline-1641744662.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"choice": "I'm done here.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641744662.json",
+		"name": "foyer-2-jesse"
+	}
+}

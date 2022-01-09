@@ -5,6 +5,8 @@
 
 [node name="Intro" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+show_map = false
+show_leave = false
 
 [node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
 title = "WHISKEY AND REGRET"
