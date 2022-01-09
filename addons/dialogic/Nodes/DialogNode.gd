@@ -1165,6 +1165,7 @@ func add_choice_button(option: Dictionary):
 # checks the condition of the given option
 func _should_add_choice_button(option: Dictionary):
 	if not option['definition'].empty():
+		definitions = Dialogic._get_definitions()
 		var def_value = null
 		for d in definitions['variables']:
 			if d['id'] == option['definition']:

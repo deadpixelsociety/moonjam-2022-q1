@@ -357,6 +357,7 @@ static func set_variable_from_id(id: String, value: String, operation: String) -
 					result = converted_target_value / converted_set_value
 		target_def['value'] = str(result)
 
+
 # tries to find the path of a given timeline 
 static func _get_timeline_file_from_name(timeline_name_path: String) -> String:
 	var timelines = DialogicUtil.get_full_resource_folder_structure()['folders']['Timelines']

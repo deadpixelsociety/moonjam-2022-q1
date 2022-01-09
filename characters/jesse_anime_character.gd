@@ -1,0 +1,2 @@
+extends SceneCharacter
+class_name JesseAnimeCharacter

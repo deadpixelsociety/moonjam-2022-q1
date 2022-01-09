@@ -1,0 +1,20 @@
+{
+	"color": "#ffa71616",
+	"description": "OH GOD IT'S JOHN SOULS",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1641620862.json",
+	"mirror_portraits": true,
+	"name": "John Souls",
+	"nickname": "John,Souls",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": -190,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/characters/johnsouls/johnsouls.png"
+		}
+	],
+	"scale": 75
+}

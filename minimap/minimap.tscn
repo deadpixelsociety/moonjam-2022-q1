@@ -1,0 +1,113 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://minimap/minimap.gd" type="Script" id=1]
+[ext_resource path="res://assets/gfx/map.png" type="Texture" id=2]
+[ext_resource path="res://assets/gfx/x.png" type="Texture" id=3]
+
+[node name="Minimap" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -780.0
+margin_bottom = -220.0
+rect_min_size = Vector2( 500, 500 )
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="MapTex" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -780.0
+margin_bottom = -220.0
+rect_min_size = Vector2( 500, 500 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OfficeLoc" type="TextureRect" parent="."]
+visible = false
+margin_left = 74.0
+margin_top = 158.0
+margin_right = 106.0
+margin_bottom = 190.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KitchenLoc" type="TextureRect" parent="."]
+visible = false
+margin_left = 259.0
+margin_top = 187.0
+margin_right = 291.0
+margin_bottom = 219.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GroundsLoc" type="TextureRect" parent="."]
+visible = false
+margin_left = 352.0
+margin_top = 80.0
+margin_right = 384.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FoyerLoc" type="TextureRect" parent="."]
+visible = false
+margin_left = 244.0
+margin_top = 284.0
+margin_right = 276.0
+margin_bottom = 316.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiningRoomLoc" type="TextureRect" parent="."]
+visible = false
+margin_left = 419.0
+margin_top = 248.0
+margin_right = 451.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BathroomLoc" type="TextureRect" parent="."]
+visible = false
+margin_left = 86.0
+margin_top = 254.0
+margin_right = 118.0
+margin_bottom = 286.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FrontLoc" type="TextureRect" parent="."]
+visible = false
+margin_left = 220.0
+margin_top = 403.0
+margin_right = 252.0
+margin_bottom = 435.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/manor_front.gd" type="Script" id=2]
+[ext_resource path="res://assets/scenes/manor_front/manor_front.png" type="Texture" id=3]
+[ext_resource path="res://assets/scenes/manor_front/police_car_1.png" type="Texture" id=4]
+[ext_resource path="res://assets/gfx/small_light.png" type="Texture" id=5]
+[ext_resource path="res://scenes/police_car.gd" type="Script" id=6]
+
+[node name="ManorFront" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+location = 7
+
+[node name="ManorFront" type="Sprite" parent="Layers/BackgroundLayer" index="0"]
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PoliceCar" type="Sprite" parent="Layers/ForegroundLayer" index="0"]
+texture = ExtResource( 4 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+light_time = 0.25
+
+[node name="BlueLight" type="Light2D" parent="Layers/ForegroundLayer/PoliceCar" index="0"]
+position = Vector2( -440, 167 )
+texture = ExtResource( 5 )
+texture_scale = 3.0
+color = Color( 0.113725, 0.243137, 0.686275, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RedLight" type="Light2D" parent="Layers/ForegroundLayer/PoliceCar" index="1"]
+position = Vector2( -413, 182 )
+texture = ExtResource( 5 )
+texture_scale = 3.0
+color = Color( 0.686275, 0.113725, 0.235294, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
+title = "THE MANOR"
+
+[connection signal="scene_ready" from="." to="." method="_on_ManorFront_scene_ready"]

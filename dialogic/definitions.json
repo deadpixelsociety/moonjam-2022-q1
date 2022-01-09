@@ -1,0 +1,37 @@
+{
+	"glossary": [
+
+	],
+	"variables": [
+		{
+			"id": "1641699769-146",
+			"name": "kitchen_1_question_3",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641700484-918",
+			"name": "kitchen_1_never_eats",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641699607-648",
+			"name": "kitchen_1_henry_done",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641699745-787",
+			"name": "kitchen_1_question_1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641699754-366",
+			"name": "kitchen_1_question_2",
+			"type": 0,
+			"value": "0"
+		}
+	]
+}

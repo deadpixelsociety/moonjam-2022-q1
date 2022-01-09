@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/kitchen.gd" type="Script" id=1]
+[ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/scenes/kitchen/kitchen.png" type="Texture" id=3]
+[ext_resource path="res://assets/gfx/large_light.png" type="Texture" id=4]
+
+[node name="Kitchen" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+location = 2
+
+[node name="Kitchen" type="Sprite" parent="Layers/BackgroundLayer" index="0"]
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D1" type="Light2D" parent="Layers/BackgroundLayer/Kitchen" index="0"]
+position = Vector2( -250, -295 )
+texture = ExtResource( 4 )
+texture_scale = 2.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+energy = 1.2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D2" type="Light2D" parent="Layers/BackgroundLayer/Kitchen" index="1"]
+position = Vector2( -27, -295 )
+texture = ExtResource( 4 )
+texture_scale = 2.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D3" type="Light2D" parent="Layers/BackgroundLayer/Kitchen" index="2"]
+position = Vector2( 198, -295 )
+texture = ExtResource( 4 )
+texture_scale = 2.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
+title = "THE KITCHEN"
+
+[connection signal="scene_ready" from="." to="." method="_on_Kitchen_scene_ready"]

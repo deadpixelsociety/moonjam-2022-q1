@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://clues/clue.gd" type="Script" id=1]
+[ext_resource path="res://assets/gfx/borpa.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+texture = ExtResource( 2 )
+clue_name = "Borpa"
+description = "A simple Borpa looking for cummies."
+tint = Color( 1, 1, 1, 1 )

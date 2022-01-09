@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/scene.gd" type="Script" id=1]
+[ext_resource path="res://scenes/scene_title.tscn" type="PackedScene" id=2]
+[ext_resource path="res://minimap/minimap.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/theme.tres" type="Theme" id=4]
+
+[node name="Scene" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Layers" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BackgroundLayer" type="Node2D" parent="Layers"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BackgroundObjects" type="Node2D" parent="Layers"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MiddleLayer" type="Node2D" parent="Layers"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MiddleObjects" type="Node2D" parent="Layers"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ForegroundLayer" type="Node2D" parent="Layers"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ForegroundObjects" type="Node2D" parent="Layers"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Overlay" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="OverlayContainer" type="Control" parent="Overlay"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="SceneTitle" parent="Overlay/OverlayContainer" instance=ExtResource( 2 )]
+
+[node name="Map" type="Button" parent="Overlay/OverlayContainer"]
+visible = false
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -112.0
+margin_top = 32.0
+margin_right = -32.0
+margin_bottom = 82.0
+rect_min_size = Vector2( 80, 50 )
+theme = ExtResource( 4 )
+text = "MAP"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Minimap" parent="Overlay/OverlayContainer" instance=ExtResource( 3 )]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -250.0
+margin_right = 250.0
+margin_bottom = 250.0
+rect_pivot_offset = Vector2( 250, 250 )
+
+[connection signal="pressed" from="Overlay/OverlayContainer/Map" to="." method="_on_Map_pressed"]

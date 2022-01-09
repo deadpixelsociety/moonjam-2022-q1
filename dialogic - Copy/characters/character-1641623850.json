@@ -1,0 +1,20 @@
+{
+	"color": "#ffd4a20d",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1641623850.json",
+	"mirror_portraits": false,
+	"name": "B.O.O.B.A.",
+	"nickname": "Barbara",
+	"nickname_bool": true,
+	"offset_x": 100,
+	"offset_y": -150,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/characters/booba/booba.png"
+		}
+	],
+	"scale": 50
+}

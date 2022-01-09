@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://characters/booba_character.gd" type="Script" id=1]
+[ext_resource path="res://assets/characters/booba/booba.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+portrait = ExtResource( 2 )
+character_name = "B.O.O.B.A."
+description = ""
+color = Color( 0.831373, 0.635294, 0.0509804, 1 )

@@ -1,0 +1,284 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://settings/settings_screen.gd" type="Script" id=1]
+[ext_resource path="res://assets/theme.tres" type="Theme" id=2]
+[ext_resource path="res://assets/fonts/atwriter.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/gfx/arrow.png" type="Texture" id=4]
+[ext_resource path="res://assets/gfx/arrow_hover.png" type="Texture" id=5]
+[ext_resource path="res://assets/gfx/arrow_disabled.png" type="Texture" id=6]
+[ext_resource path="res://assets/gfx/arrow_pressed.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+font_data = ExtResource( 3 )
+
+[node name="SettingsScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 1.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "SETTINGS"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionsContainer" type="GridContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -171.5
+margin_top = -163.0
+margin_right = 171.5
+margin_bottom = 163.0
+size_flags_vertical = 3
+columns = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MasterVolumeLabel" type="Label" parent="OptionsContainer"]
+margin_right = 231.0
+margin_bottom = 51.0
+text = "MASTER VOLUME"
+
+[node name="MasterVolumeDec" type="TextureButton" parent="OptionsContainer"]
+margin_left = 235.0
+margin_right = 255.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 20, 36 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+stretch_mode = 3
+
+[node name="MasterVolumeVal" type="Label" parent="OptionsContainer"]
+margin_left = 259.0
+margin_right = 319.0
+margin_bottom = 51.0
+text = "100"
+align = 1
+
+[node name="MasterVolumeInc" type="TextureButton" parent="OptionsContainer"]
+margin_left = 323.0
+margin_right = 343.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 20, 36 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+stretch_mode = 3
+flip_h = true
+
+[node name="MusicVolumeLabel" type="Label" parent="OptionsContainer"]
+margin_top = 55.0
+margin_right = 231.0
+margin_bottom = 106.0
+text = "  MUSIC"
+
+[node name="MusicVolumeDec" type="TextureButton" parent="OptionsContainer"]
+margin_left = 235.0
+margin_top = 55.0
+margin_right = 255.0
+margin_bottom = 106.0
+rect_min_size = Vector2( 20, 36 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+stretch_mode = 3
+
+[node name="MusicVolumeVal" type="Label" parent="OptionsContainer"]
+margin_left = 259.0
+margin_top = 55.0
+margin_right = 319.0
+margin_bottom = 106.0
+text = "100"
+align = 1
+
+[node name="MusicVolumeInc" type="TextureButton" parent="OptionsContainer"]
+margin_left = 323.0
+margin_top = 55.0
+margin_right = 343.0
+margin_bottom = 106.0
+rect_min_size = Vector2( 20, 36 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+stretch_mode = 3
+flip_h = true
+
+[node name="SoundVolumeLabel" type="Label" parent="OptionsContainer"]
+margin_top = 110.0
+margin_right = 231.0
+margin_bottom = 161.0
+text = "  SOUND"
+
+[node name="SoundVolumeDec" type="TextureButton" parent="OptionsContainer"]
+margin_left = 235.0
+margin_top = 110.0
+margin_right = 255.0
+margin_bottom = 161.0
+rect_min_size = Vector2( 20, 36 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+stretch_mode = 3
+
+[node name="SoundVolumeVal" type="Label" parent="OptionsContainer"]
+margin_left = 259.0
+margin_top = 110.0
+margin_right = 319.0
+margin_bottom = 161.0
+text = "100"
+align = 1
+
+[node name="SoundVolumeInc" type="TextureButton" parent="OptionsContainer"]
+margin_left = 323.0
+margin_top = 110.0
+margin_right = 343.0
+margin_bottom = 161.0
+rect_min_size = Vector2( 20, 36 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+stretch_mode = 3
+flip_h = true
+
+[node name="FullscreenLabel" type="Label" parent="OptionsContainer"]
+margin_top = 165.0
+margin_right = 231.0
+margin_bottom = 216.0
+text = "FULLSCREEN"
+
+[node name="Empty1" type="Label" parent="OptionsContainer"]
+margin_left = 235.0
+margin_top = 165.0
+margin_right = 255.0
+margin_bottom = 216.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FullscreenVal" type="Button" parent="OptionsContainer"]
+margin_left = 259.0
+margin_top = 165.0
+margin_right = 319.0
+margin_bottom = 216.0
+text = "ON"
+
+[node name="Empty2" type="Label" parent="OptionsContainer"]
+margin_left = 323.0
+margin_top = 165.0
+margin_right = 343.0
+margin_bottom = 216.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VignetteLabel" type="Label" parent="OptionsContainer"]
+margin_top = 220.0
+margin_right = 231.0
+margin_bottom = 271.0
+text = "VIGNETTE"
+
+[node name="Empty3" type="Label" parent="OptionsContainer"]
+margin_left = 235.0
+margin_top = 220.0
+margin_right = 255.0
+margin_bottom = 271.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VignetteVal" type="Button" parent="OptionsContainer"]
+margin_left = 259.0
+margin_top = 220.0
+margin_right = 319.0
+margin_bottom = 271.0
+text = "ON"
+
+[node name="Empty4" type="Label" parent="OptionsContainer"]
+margin_left = 323.0
+margin_top = 220.0
+margin_right = 343.0
+margin_bottom = 271.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FilmGrainLabel" type="Label" parent="OptionsContainer"]
+margin_top = 275.0
+margin_right = 231.0
+margin_bottom = 326.0
+text = "FILM GRAIN"
+
+[node name="Empty5" type="Label" parent="OptionsContainer"]
+margin_left = 235.0
+margin_top = 275.0
+margin_right = 255.0
+margin_bottom = 326.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FilmGrainVal" type="Button" parent="OptionsContainer"]
+margin_left = 259.0
+margin_top = 275.0
+margin_right = 319.0
+margin_bottom = 326.0
+text = "ON"
+
+[node name="Empty6" type="Label" parent="OptionsContainer"]
+margin_left = 323.0
+margin_top = 275.0
+margin_right = 343.0
+margin_bottom = 326.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Apply" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -180.5
+margin_top = -75.0
+margin_right = 180.5
+margin_bottom = -32.0
+text = "APPLY CHANGES AND EXIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="OptionsContainer/MasterVolumeDec" to="." method="_on_MasterVolumeDec_pressed"]
+[connection signal="pressed" from="OptionsContainer/MasterVolumeInc" to="." method="_on_MasterVolumeInc_pressed"]
+[connection signal="pressed" from="OptionsContainer/MusicVolumeDec" to="." method="_on_MusicVolumeDec_pressed"]
+[connection signal="pressed" from="OptionsContainer/MusicVolumeInc" to="." method="_on_MusicVolumeInc_pressed"]
+[connection signal="pressed" from="OptionsContainer/SoundVolumeDec" to="." method="_on_SoundVolumeDec_pressed"]
+[connection signal="pressed" from="OptionsContainer/SoundVolumeInc" to="." method="_on_SoundVolumeInc_pressed"]
+[connection signal="pressed" from="OptionsContainer/FullscreenVal" to="." method="_on_FullscreenVal_pressed"]
+[connection signal="pressed" from="OptionsContainer/VignetteVal" to="." method="_on_VignetteVal_pressed"]
+[connection signal="pressed" from="OptionsContainer/FilmGrainVal" to="." method="_on_FilmGrainVal_pressed"]
+[connection signal="pressed" from="Apply" to="." method="_on_Apply_pressed"]

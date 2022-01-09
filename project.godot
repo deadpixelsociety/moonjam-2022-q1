@@ -34,6 +34,21 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/anima/core/tween.gd"
 }, {
+"base": "SceneCharacter",
+"class": "BoobaCharacter",
+"language": "GDScript",
+"path": "res://characters/booba_character.gd"
+}, {
+"base": "Resource",
+"class": "Clue",
+"language": "GDScript",
+"path": "res://clues/clue.gd"
+}, {
+"base": "Area2D",
+"class": "CluePickup",
+"language": "GDScript",
+"path": "res://clues/clue_pickup.gd"
+}, {
 "base": "Reference",
 "class": "DTS",
 "language": "GDScript",
@@ -63,6 +78,86 @@ _global_script_classes=[ {
 "class": "DialogicUtil",
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
+}, {
+"base": "Scene",
+"class": "Foyer",
+"language": "GDScript",
+"path": "res://scenes/foyer.gd"
+}, {
+"base": "Scene",
+"class": "Grounds",
+"language": "GDScript",
+"path": "res://scenes/grounds.gd"
+}, {
+"base": "Scene",
+"class": "Intro",
+"language": "GDScript",
+"path": "res://scenes/intro.gd"
+}, {
+"base": "Control",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://inventory/inventory.gd"
+}, {
+"base": "Control",
+"class": "InventorySlot",
+"language": "GDScript",
+"path": "res://inventory/inventory_slot.gd"
+}, {
+"base": "SceneCharacter",
+"class": "JesseAnimeCharacter",
+"language": "GDScript",
+"path": "res://characters/jesse_anime_character.gd"
+}, {
+"base": "Scene",
+"class": "Kitchen",
+"language": "GDScript",
+"path": "res://scenes/kitchen.gd"
+}, {
+"base": "Scene",
+"class": "ManorFront",
+"language": "GDScript",
+"path": "res://scenes/manor_front.gd"
+}, {
+"base": "Control",
+"class": "Minimap",
+"language": "GDScript",
+"path": "res://minimap/minimap.gd"
+}, {
+"base": "Sprite",
+"class": "PoliceCar",
+"language": "GDScript",
+"path": "res://scenes/police_car.gd"
+}, {
+"base": "Node2D",
+"class": "Scene",
+"language": "GDScript",
+"path": "res://scenes/scene.gd"
+}, {
+"base": "Resource",
+"class": "SceneCharacter",
+"language": "GDScript",
+"path": "res://characters/scene_character.gd"
+}, {
+"base": "Area2D",
+"class": "SceneCharacterPlacement",
+"language": "GDScript",
+"path": "res://characters/scene_character_placement.gd"
+}, {
+"base": "Control",
+"class": "SceneTitle",
+"language": "GDScript",
+"path": "res://scenes/scene_title.gd"
+}, {
+"base": "Control",
+"class": "Start",
+"language": "GDScript",
+"path": "res://start.gd"
+}, {
+"base": "Control",
+"class": "TitleScreen",
+"language": "GDScript",
+"path": "res://title/title_screen.gd"
 } ]
 _global_script_class_icons={
 "AnimaEasing": "",
@@ -70,33 +165,106 @@ _global_script_class_icons={
 "AnimaNodesProperties": "",
 "AnimaStrings": "",
 "AnimaTween": "",
+"BoobaCharacter": "",
+"Clue": "",
+"CluePickup": "",
 "DTS": "",
 "Dialogic": "",
 "DialogicBackgroundMusic": "",
 "DialogicDefinitionsUtil": "",
 "DialogicResources": "",
-"DialogicUtil": ""
+"DialogicUtil": "",
+"Foyer": "",
+"Grounds": "",
+"Intro": "",
+"Inventory": "",
+"InventorySlot": "",
+"JesseAnimeCharacter": "",
+"Kitchen": "",
+"ManorFront": "",
+"Minimap": "",
+"PoliceCar": "",
+"Scene": "",
+"SceneCharacter": "",
+"SceneCharacterPlacement": "",
+"SceneTitle": "",
+"Start": "",
+"TitleScreen": ""
 }
 
 [application]
 
-config/name="MoonJam 2022 Q1"
+config/name="Soul of Las Borpas"
 config/description="Team Citizens Under Moon - MoonJam 2022 Q1 Entry"
-run/main_scene="res://main.tscn"
+run/main_scene="res://start.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Audio="*res://audio/audio.gd"
+Audio="*res://audio/audio.tscn"
 Settings="*res://settings/settings.gd"
+EventBus="*res://addons/godot-event-bus/plugin/event_bus.gd"
+Anima="*res://addons/anima/core/anima.gd"
+Util="*res://util/util.gd"
+GameState="*res://game_state.gd"
 Main="*res://main.tscn"
 
 [display]
 
 window/size/width=1280
 window/size/height=720
+window/size/borderless=true
+window/size/fullscreen=true
 window/stretch/mode="viewport"
-window/stretch/aspect="keep"
+window/stretch/aspect="keep_width"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/anima/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/godot-event-bus/plugin.cfg" )
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[input]
+
+click={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+right_click={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+dialogue={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":32,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777221,"unicode":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
 
 [physics]
 
@@ -104,4 +272,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://default_env.tres"

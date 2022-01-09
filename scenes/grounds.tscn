@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/grounds.gd" type="Script" id=1]
+[ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/scenes/grounds/grounds.png" type="Texture" id=3]
+[ext_resource path="res://assets/gfx/small_light.png" type="Texture" id=4]
+[ext_resource path="res://assets/gfx/large_light.png" type="Texture" id=5]
+
+[node name="Grounds" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+location = 3
+
+[node name="Grounds" type="Sprite" parent="Layers/BackgroundLayer" index="0"]
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D" type="Light2D" parent="Layers/BackgroundLayer/Grounds" index="0"]
+position = Vector2( -444, 80 )
+texture = ExtResource( 4 )
+texture_scale = 2.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D2" type="Light2D" parent="Layers/BackgroundLayer/Grounds" index="1"]
+position = Vector2( -217, 80 )
+texture = ExtResource( 4 )
+texture_scale = 2.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D3" type="Light2D" parent="Layers/BackgroundLayer/Grounds" index="2"]
+position = Vector2( -441, 258 )
+texture = ExtResource( 4 )
+texture_scale = 2.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D4" type="Light2D" parent="Layers/BackgroundLayer/Grounds" index="3"]
+position = Vector2( -109, 256 )
+texture = ExtResource( 4 )
+texture_scale = 2.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D5" type="Light2D" parent="Layers/BackgroundLayer/Grounds" index="4"]
+position = Vector2( 118, 42 )
+texture = ExtResource( 5 )
+texture_scale = 2.0
+color = Color( 0.898039, 0.576471, 0.0156863, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
+title = "THE GROUNDS"

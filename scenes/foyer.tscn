@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/foyer.gd" type="Script" id=2]
+[ext_resource path="res://assets/scenes/foyer/foyer.png" type="Texture" id=3]
+[ext_resource path="res://assets/gfx/small_light.png" type="Texture" id=4]
+[ext_resource path="res://characters/booba.tscn" type="PackedScene" id=5]
+[ext_resource path="res://characters/jesse_anime.tscn" type="PackedScene" id=6]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( 63, -358, 62, -339, 51, -334, 49, -112, 35, -115, 32, -358 )
+
+[node name="Foyer" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+location = 4
+
+[node name="Foyer" type="Sprite" parent="Layers/BackgroundLayer" index="0"]
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D1" type="Light2D" parent="Layers/BackgroundLayer/Foyer" index="0"]
+position = Vector2( -60, -236 )
+texture = ExtResource( 4 )
+texture_scale = 3.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+energy = 1.2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D2" type="Light2D" parent="Layers/BackgroundLayer/Foyer" index="1"]
+position = Vector2( 101, -305 )
+texture = ExtResource( 4 )
+texture_scale = 3.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+energy = 1.2
+shadow_enabled = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D3" type="Light2D" parent="Layers/BackgroundLayer/Foyer" index="2"]
+position = Vector2( 198, -305 )
+texture = ExtResource( 4 )
+texture_scale = 3.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+energy = 1.2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D4" type="Light2D" parent="Layers/BackgroundLayer/Foyer" index="3"]
+position = Vector2( 295, -305 )
+texture = ExtResource( 4 )
+texture_scale = 3.0
+color = Color( 0.870588, 0.854902, 0.662745, 1 )
+energy = 1.2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Layers/BackgroundLayer/Foyer" index="4"]
+position = Vector2( 0, -2 )
+occluder = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Characters" type="Node2D" parent="Layers/MiddleObjects" index="0"]
+visible = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Booba" parent="Layers/MiddleObjects/Characters" index="0" instance=ExtResource( 5 )]
+position = Vector2( 190, -30 )
+
+[node name="JesseAnime" parent="Layers/MiddleObjects/Characters" index="1" instance=ExtResource( 6 )]
+position = Vector2( 390, -30 )
+
+[node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
+title = "THE FOYER"
+
+[connection signal="scene_ready" from="." to="." method="_on_Foyer_scene_ready"]

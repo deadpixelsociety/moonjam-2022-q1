@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/characters/jesse/jesse.png" type="Texture" id=1]
+[ext_resource path="res://characters/scene_character_placement.tscn" type="PackedScene" id=2]
+[ext_resource path="res://characters/jesse_anime_character.tres" type="Resource" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 136.0
+height = 316.0
+
+[node name="JesseAnime" instance=ExtResource( 2 )]
+scale = Vector2( 0.5, 0.5 )
+character = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 1 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+position = Vector2( 0, 22 )
+shape = SubResource( 1 )

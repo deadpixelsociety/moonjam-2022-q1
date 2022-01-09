@@ -1,21 +1,34 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://assets/shaders/vignette.tres" type="Material" id=2]
+[ext_resource path="res://assets/shaders/film_grain.tres" type="Material" id=3]
 
-[node name="Main" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="Main" type="Node2D"]
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="ViewportContainer" type="ViewportContainer" parent="."]
+[node name="SceneContainer" type="Node2D" parent="."]
+
+[node name="GrainLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Grain" type="ColorRect" parent="GrainLayer"]
+material = ExtResource( 3 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SceneViewport" type="Viewport" parent="ViewportContainer"]
-size = Vector2( 1280, 720 )
+[node name="VignetteLayer" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="Vignette" type="ColorRect" parent="VignetteLayer"]
+material = ExtResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

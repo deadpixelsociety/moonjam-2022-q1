@@ -1,6 +1,8 @@
-extends Control
+extends Node2D
 
-onready var _scene_viewport := $ViewportContainer/SceneViewport
+onready var _scene_container := $SceneContainer
+onready var _vignette := $VignetteLayer/Vignette
+onready var _film_grain := $GrainLayer/Grain
 
 
 func enable_fullscreen():
@@ -11,7 +13,24 @@ func enable_fullscreen():
 func disable_fullscreen():
 	OS.window_fullscreen = false
 	OS.window_borderless = false
+	OS.window_size = Vector2(1280.0, 720.0)
 	OS.center_window()
+
+
+func enable_vignette():
+	_vignette.visible = true
+
+
+func disable_vignette():
+	_vignette.visible = false
+
+
+func enable_film_grain():
+	_film_grain.visible = true
+
+
+func disable_film_grain():
+	_film_grain.visible = false
 
 
 func switch_scene(path: String):
@@ -20,8 +39,8 @@ func switch_scene(path: String):
 
 
 func switch_scene_to(scene: PackedScene):
-	if _scene_viewport.get_child_count() > 0:
-		var child = _scene_viewport.get_child(0)
+	if _scene_container.get_child_count() > 0:
+		var child = _scene_container.get_child(0)
 		if child:
 			child.queue_free()
-	_scene_viewport.add_child(scene.instance())
+	_scene_container.add_child(scene.instance())

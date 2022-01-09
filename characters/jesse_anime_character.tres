@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://characters/jesse_anime_character.gd" type="Script" id=1]
+[ext_resource path="res://assets/characters/jesse/jesse.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+portrait = ExtResource( 2 )
+character_name = "Jesse Anime"
+description = ""
+color = Color( 0.854902, 0.12549, 0.878431, 1 )
