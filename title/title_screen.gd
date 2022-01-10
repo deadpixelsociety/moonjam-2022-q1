@@ -11,5 +11,9 @@ func _on_Settings_pressed():
 	Main.switch_ui("res://settings/settings_screen.tscn")
 
 
+func _on_Credits_pressed():
+	Main.switch_ui("res://credits/credits.tscn")
+
+
 func _on_Quit_pressed():
 	get_tree().quit()

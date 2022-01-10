@@ -5,6 +5,11 @@ onready var _vignette := $VignetteLayer/Vignette
 onready var _ui_layer := $UILayer
 
 
+func _input(event):
+	if not get_tree().paused and Input.is_action_just_pressed("ui_cancel"):
+		pause_game()
+
+
 func enable_fullscreen():
 	OS.window_fullscreen = true
 	OS.window_borderless = true
@@ -23,6 +28,15 @@ func enable_vignette():
 
 func disable_vignette():
 	_vignette.visible = false
+
+
+func pause_game():
+	switch_ui("res://pause/pause.tscn")
+	get_tree().paused = true
+
+
+func unpause_game():
+	get_tree().paused = false
 
 
 func switch_ui(path: String):

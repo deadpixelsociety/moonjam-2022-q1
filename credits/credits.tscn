@@ -1,0 +1,118 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://assets/theme.tres" type="Theme" id=2]
+[ext_resource path="res://assets/fonts/ui_title.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/fonts/dialogue.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/fonts/dialogue_bold.tres" type="DynamicFont" id=5]
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 1.0
+margin_bottom = 76.0
+custom_fonts/font = ExtResource( 3 )
+text = "CREDITS"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="RichText" type="RichTextLabel" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 64.0
+margin_right = -64.0
+grow_vertical = 2
+rect_min_size = Vector2( 0, 500 )
+custom_fonts/bold_font = ExtResource( 5 )
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[center][b]A
+Team Citizens Under Moon 
+Production[/b][/center]
+
+[center][color=#cc00ff][b]Programming[/b][/color][/center]
+[center][url=\"https://twitter.com/deadpxlsociety\"]deadpixelsociety[/url][/center]
+
+[center][color=#ffcc00][b]Music and Writing[/b][/color][/center]
+[center][url=\"https://twitter.com/ICWobbles\"]ICWobbles[/url][/center]
+
+[center][color=#00ccff][b]Art[/b][/color][/center] 
+[center][url=\"https://twitter.com/itsmuffnbuttn\"]muffnbuttn[/url][/center]
+
+[center][color=#ff0000][b]Special Thanks[/b][/color][/center] 
+[center]MOONMOON
+Erros
+Vernon
+ur mom[/center]
+
+[center][color=#0000ff][b]Assets[/b][/color][/center] 
+[center]Car Door Closing: [url=\"https://freesound.org/people/NachtmahrTV/sounds/556690/\"]https://freesound.org/people/NachtmahrTV/sounds/556690/[/url]
+Car Driving Ambiance: [url=\"https://freesound.org/people/pulswelle/sounds/219245/\"]https://freesound.org/people/pulswelle/sounds/219245/[/url]
+Ringtone: [url=\"https://freesound.org/people/izalew/sounds/434877/\"]https://freesound.org/people/izalew/sounds/434877/[/url]
+Car Sound: [url=\"https://freesound.org/people/Frederik_Sunne/sounds/324138/[/center]\"]https://freesound.org/people/Frederik_Sunne/sounds/324138/[/url][/center]"
+text = "A
+Team Citizens Under Moon 
+Production
+
+Programming
+deadpixelsociety
+
+Music and Writing
+ICWobbles
+
+Art 
+muffnbuttn
+
+Special Thanks 
+MOONMOON
+Erros
+Vernon
+ur mom
+
+Assets 
+Car Door Closing: https://freesound.org/people/NachtmahrTV/sounds/556690/
+Car Driving Ambiance: https://freesound.org/people/pulswelle/sounds/219245/
+Ringtone: https://freesound.org/people/izalew/sounds/434877/
+Car Sound: \"]https://freesound.org/people/Frederik_Sunne/sounds/324138/"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -36.5
+margin_top = -75.0
+margin_right = 36.5
+margin_bottom = -32.0
+text = "BACK"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="meta_clicked" from="RichText" to="." method="_on_RichText_meta_clicked"]
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

@@ -55,4 +55,5 @@ text = "QUIT"
 
 [connection signal="pressed" from="ButtonContainer/StartGame" to="." method="_on_StartGame_pressed"]
 [connection signal="pressed" from="ButtonContainer/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="ButtonContainer/Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="ButtonContainer/Quit" to="." method="_on_Quit_pressed"]
