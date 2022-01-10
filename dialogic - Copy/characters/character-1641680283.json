@@ -6,15 +6,15 @@
 	"id": "character-1641680283.json",
 	"mirror_portraits": true,
 	"name": "Jesse Anime",
-	"nickname": "Jesse",
+	"nickname": "Jesse,Jesse goddamn Anime",
 	"nickname_bool": true,
 	"offset_x": 0,
-	"offset_y": -180,
+	"offset_y": -100,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://assets/characters/jesse/jesse.png"
 		}
 	],
-	"scale": 75
+	"scale": 100
 }

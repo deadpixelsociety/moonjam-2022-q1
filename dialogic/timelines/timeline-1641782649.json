@@ -1,0 +1,130 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1641783116-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Enough talk."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kingpin Chugs. Never met a man who cared so little for nutrition and so much for hygiene. You might think it would be hard to be afraid of a man after watching him drink a glass boot full of Extra Spicy Coconut Mango Chutney, but you'd be wrong.\nBesides, underneath the jiggle and smooth talking was a ferocious and savvy businessman. Man knew how to pay the bills with money to spare.\nCan't trust somebody that sharp. He'd drink this town dry, one bottle at a time."
+		},
+		{
+			"action": "join",
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The infamous John Souls, puttin' that world famous wit up against the mystery of the century."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We've all got jobs to do, Mr. Chugs."
+		},
+		{
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Please, I'm from the Badlands. No need for the formality with me."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To this day, I still don't know where that is. But I'll take his word for it."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Chugs, then. Just doing my job."
+		},
+		{
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And we are all very glad you are. To what do I owe the pleasure of speaking with you?"
+		},
+		{
+			"change_timeline": "timeline-1641782859.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641782649.json",
+		"name": "foyer-4-chugs"
+	}
+}

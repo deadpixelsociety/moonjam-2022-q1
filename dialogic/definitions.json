@@ -50,6 +50,24 @@
 			"name": "murder_weapon_known",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1641769419-648",
+			"name": "found_tray",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641769670-787",
+			"name": "found_giftcard",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641783116-648",
+			"name": "chugs_done",
+			"type": 0,
+			"value": "0"
 		}
 	]
 }

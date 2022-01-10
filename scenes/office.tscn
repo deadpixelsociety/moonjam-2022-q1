@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/office.gd" type="Script" id=2]
+[ext_resource path="res://interactables/desk_object.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interactables/chair_object.tscn" type="PackedScene" id=4]
+[ext_resource path="res://interactables/picture_object.tscn" type="PackedScene" id=5]
+[ext_resource path="res://interactables/window_object.tscn" type="PackedScene" id=6]
+[ext_resource path="res://interactables/framed_button_object.tscn" type="PackedScene" id=7]
+[ext_resource path="res://interactables/rug_object.tscn" type="PackedScene" id=8]
+
+[node name="Office" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+location = 1
+
+[node name="Interactables" parent="Layers/MiddleObjects" index="0"]
+visible = true
+
+[node name="ChairObject" parent="Layers/MiddleObjects/Interactables" index="0" instance=ExtResource( 4 )]
+position = Vector2( -425, 141 )
+
+[node name="DeskObject" parent="Layers/MiddleObjects/Interactables" index="1" instance=ExtResource( 3 )]
+position = Vector2( 2, 10 )
+
+[node name="FramedButtonObject" parent="Layers/MiddleObjects/Interactables" index="2" instance=ExtResource( 7 )]
+position = Vector2( 3, -304 )
+
+[node name="PictureObject" parent="Layers/MiddleObjects/Interactables" index="3" instance=ExtResource( 5 )]
+position = Vector2( 270, 37 )
+
+[node name="RugObject" parent="Layers/MiddleObjects/Interactables" index="4" instance=ExtResource( 8 )]
+position = Vector2( 15, 282 )
+
+[node name="WindowObject" parent="Layers/MiddleObjects/Interactables" index="5" instance=ExtResource( 6 )]
+position = Vector2( -575, -121 )
+
+[node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
+title = "THOROUGHBRED'S OFFICE"
+
+[node name="LocationList" parent="Overlay/OverlayContainer" index="3"]
+margin_left = -46.0
+margin_top = -21.5
+margin_right = 46.0
+margin_bottom = 21.5
+rect_pivot_offset = Vector2( 46, 21 )
+
+[node name="GoFoyer" type="Button" parent="Overlay/OverlayContainer/LocationList" index="0"]
+margin_right = 92.0
+margin_bottom = 43.0
+text = "FOYER"
+
+[connection signal="scene_ready" from="." to="." method="_on_Office_scene_ready"]
+[connection signal="pressed" from="Overlay/OverlayContainer/LocationList/GoFoyer" to="." method="_on_GoFoyer_pressed"]

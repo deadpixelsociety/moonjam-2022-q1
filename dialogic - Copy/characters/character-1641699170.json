@@ -9,12 +9,12 @@
 	"nickname": "Chef,Henry Phillips,Cook",
 	"nickname_bool": true,
 	"offset_x": 0,
-	"offset_y": -180,
+	"offset_y": -100,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://assets/characters/henry/henry.png"
 		}
 	],
-	"scale": 50
+	"scale": 100
 }

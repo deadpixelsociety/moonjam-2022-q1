@@ -4,17 +4,17 @@
 	"display_name": "?????",
 	"display_name_bool": true,
 	"id": "character-1641621333.json",
-	"mirror_portraits": false,
+	"mirror_portraits": true,
 	"name": "B.O.O.B.A. Unknown",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 100,
-	"offset_y": -150,
+	"offset_x": 0,
+	"offset_y": -100,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://assets/characters/booba/booba_silhouette.png"
 		}
 	],
-	"scale": 50
+	"scale": 100
 }

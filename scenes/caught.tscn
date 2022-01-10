@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/caught.gd" type="Script" id=2]
+
+[node name="Caught" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+show_map = false
+show_leave = false
+
+[node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
+title = "HARD TIME"
+
+[connection signal="scene_ready" from="." to="." method="_on_Caught_scene_ready"]

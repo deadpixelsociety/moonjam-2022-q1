@@ -2,7 +2,6 @@ extends Node2D
 
 onready var _scene_container := $SceneContainer
 onready var _vignette := $VignetteLayer/Vignette
-onready var _film_grain := $GrainLayer/Grain
 onready var _ui_layer := $UILayer
 
 
@@ -24,14 +23,6 @@ func enable_vignette():
 
 func disable_vignette():
 	_vignette.visible = false
-
-
-func enable_film_grain():
-	_film_grain.visible = true
-
-
-func disable_film_grain():
-	_film_grain.visible = false
 
 
 func switch_ui(path: String):

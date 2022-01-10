@@ -6,7 +6,7 @@
 [ext_resource path="res://assets/gfx/small_light.png" type="Texture" id=4]
 [ext_resource path="res://characters/booba.tscn" type="PackedScene" id=5]
 [ext_resource path="res://characters/jesse_anime.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/theme.tres" type="Theme" id=7]
+[ext_resource path="res://characters/chugs.tscn" type="PackedScene" id=7]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( 63, -358, 62, -339, 51, -334, 49, -112, 35, -115, 32, -358 )
@@ -69,26 +69,25 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Booba" parent="Layers/MiddleObjects/Characters" index="0" instance=ExtResource( 5 )]
+[node name="Chugs" parent="Layers/MiddleObjects/Characters" index="0" instance=ExtResource( 7 )]
+visible = false
+position = Vector2( -30, -30 )
+
+[node name="Booba" parent="Layers/MiddleObjects/Characters" index="1" instance=ExtResource( 5 )]
 position = Vector2( 190, -30 )
 
-[node name="JesseAnime" parent="Layers/MiddleObjects/Characters" index="1" instance=ExtResource( 6 )]
+[node name="JesseAnime" parent="Layers/MiddleObjects/Characters" index="2" instance=ExtResource( 6 )]
 position = Vector2( 390, -30 )
 
 [node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
 title = "THE FOYER"
 
 [node name="LocationList" parent="Overlay/OverlayContainer" index="3"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
 margin_left = -280.5
 margin_top = -21.5
 margin_right = 280.5
 margin_bottom = 21.5
 rect_pivot_offset = Vector2( 280, 21 )
-theme = ExtResource( 7 )
 alignment = 1
 
 [node name="GoKitchen" type="Button" parent="Overlay/OverlayContainer/LocationList" index="0"]

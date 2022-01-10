@@ -4,6 +4,18 @@
 	],
 	"variables": [
 		{
+			"id": "1641699769-146",
+			"name": "kitchen_1_question_3",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641700484-918",
+			"name": "kitchen_1_never_eats",
+			"type": 0,
+			"value": "0"
+		},
+		{
 			"id": "1641699607-648",
 			"name": "kitchen_1_henry_done",
 			"type": 0,
@@ -22,14 +34,38 @@
 			"value": "0"
 		},
 		{
-			"id": "1641699769-146",
-			"name": "kitchen_1_question_3",
+			"id": "1641753292-795",
+			"name": "scuffed_tracks",
 			"type": 0,
 			"value": "0"
 		},
 		{
-			"id": "1641700484-918",
-			"name": "kitchen_1_never_eats",
+			"id": "1641755094-255",
+			"name": "found_scrap",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641757072-648",
+			"name": "murder_weapon_known",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641769419-648",
+			"name": "found_tray",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641769670-787",
+			"name": "found_giftcard",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1641783116-648",
+			"name": "chugs_done",
 			"type": 0,
 			"value": "0"
 		}

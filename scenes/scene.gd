@@ -212,6 +212,8 @@ func disable_interactables():
 
 
 func _show_characters():
+	if _characters.visible:
+		return
 	var anima = Anima.begin(self, "show_characters")
 	anima.then({
 		node = _characters, 
@@ -224,6 +226,8 @@ func _show_characters():
 
 
 func _hide_characters():
+	if not _characters.visible:
+		return
 	var anima = Anima.begin(self, "hide_characters")
 	anima.then({
 		node = _characters, 

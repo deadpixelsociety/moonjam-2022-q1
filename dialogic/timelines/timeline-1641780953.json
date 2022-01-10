@@ -1,0 +1,131 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I had the weapon. I'd covered my tracks. Time to make one last phony display of usefulness for appearance's sake and then get the hell out of there.\nI stepped as casually down the steps as I could, and I saw the new figure in the foyer. I placed the voice, finally.\nAnother goddamn YouTube star. But this one... this one had weight. And a lot of it.\nNo mistaking him. One of Thoroughbred's rival digital dons, the bottomless pit of Las Borpas.\nKingpin Chugs."
+		},
+		{
+			"action": "join",
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why am I here? I came to pay my respects to another legend, of course."
+		},
+		{
+			"action": "join",
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641623850.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Word travels awfully fast, wouldn't you say?"
+		},
+		{
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I've got friends who like to keep me informed. It pays to stay on top of the latest trends, after all, when you're in the YouTube game."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He turned to Jesse, and gave him a patronizing smile."
+		},
+		{
+			"action": "join",
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			}
+		},
+		{
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Say, I've got a POWERFUL thirst. Why don't you run along and get old Chugs a drink, kid?"
+		},
+		{
+			"character": "character-1641680283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nnn..!!~"
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pristinely groomed and with an infinite thirst for power, Chugs and Thoroughbred had bad blood between them. Thoroughbred always hated Chugs for basing his rap game on sponsorships, and it's no surprise Chugs didn't appreciate the slights thrown his way. But what was he doing here now?\nNo, John. Eye on the prize. We had to get out of here. Maybe Chugs would be just the distraction I needed.\nI cut into the conversation."
+		},
+		{
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well if it isn't the Badlands Borpas Belcher himself. Come to gloat?"
+		},
+		{
+			"character": "character-1641781185.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "John Souls! I'll be. We've got a lot of reputation gathered under one roof here, don't we?"
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Had to make one last show of doing my job before I split."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641780953.json",
+		"name": "foyer-4"
+	}
+}

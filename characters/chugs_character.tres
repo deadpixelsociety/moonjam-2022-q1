@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://characters/chugs_character.gd" type="Script" id=1]
+[ext_resource path="res://assets/characters/chugs/chugs.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+portrait = ExtResource( 2 )
+character_name = "Kingpin Chugs"
+description = ""
+color = Color( 0.933333, 0.764706, 0.603922, 1 )

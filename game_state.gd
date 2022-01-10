@@ -3,7 +3,11 @@ extends Node
 enum EVIDENCE {
 	TRACKS,
 	SCRAP,
-	MURDER_WEAPON
+	MURDER_WEAPON,
+	TRAY,
+	GIFT_CARD,
+	SPOKE_WITH_CHUGS,
+	SPOKE_WITH_BOOBA
 }
 
 enum LOCATION {
@@ -21,12 +25,15 @@ enum STATE {
 	ROOM_INTRO,
 	MET_HENRY,
 	FIND_GROUNDS,
-	FIND_EVIDENCE
+	FIND_EVIDENCE,
+	TIME_TO_LEAVE,
+	CAUGHT,
+	FINALE
 }
 
 var evidence_found = {}
 var locations_visited = {}
-var state = STATE.FIND_GROUNDS
+var state = STATE.FIND_EVIDENCE
 
 
 func set_evidence_found(evidence: int):
@@ -63,3 +70,7 @@ func is_state(value: int) -> bool:
 
 func is_at_least_state(value: int) -> bool:
 	return state >= value
+
+
+func is_state_between(min_value: int, max_value: int) -> bool:
+	return state >= min_value and state <= max_value

@@ -3,7 +3,7 @@ class_name TitleScreen
 
 
 func _on_StartGame_pressed():
-	Main.switch_scene("res://scenes/grounds.tscn")
+	Main.switch_scene("res://scenes/intro.tscn")
 	queue_free()
 
 

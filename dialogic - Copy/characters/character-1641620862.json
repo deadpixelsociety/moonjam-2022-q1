@@ -4,17 +4,17 @@
 	"display_name": "",
 	"display_name_bool": false,
 	"id": "character-1641620862.json",
-	"mirror_portraits": true,
+	"mirror_portraits": false,
 	"name": "John Souls",
 	"nickname": "John,Souls",
 	"nickname_bool": true,
 	"offset_x": 0,
-	"offset_y": -190,
+	"offset_y": -100,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://assets/characters/johnsouls/johnsouls.png"
+			"path": "res://assets/characters/johnsouls/john_souls.png"
 		}
 	],
-	"scale": 75
+	"scale": 100
 }

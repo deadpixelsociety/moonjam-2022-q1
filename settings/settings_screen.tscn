@@ -37,9 +37,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -171.5
-margin_top = -163.0
+margin_top = -135.5
 margin_right = 171.5
-margin_bottom = 163.0
+margin_bottom = 135.5
 size_flags_vertical = 3
 columns = 4
 __meta__ = {
@@ -227,37 +227,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="FilmGrainLabel" type="Label" parent="OptionsContainer"]
-margin_top = 275.0
-margin_right = 231.0
-margin_bottom = 326.0
-text = "FILM GRAIN"
-
-[node name="Empty5" type="Label" parent="OptionsContainer"]
-margin_left = 235.0
-margin_top = 275.0
-margin_right = 255.0
-margin_bottom = 326.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="FilmGrainVal" type="Button" parent="OptionsContainer"]
-margin_left = 259.0
-margin_top = 275.0
-margin_right = 319.0
-margin_bottom = 326.0
-text = "ON"
-
-[node name="Empty6" type="Label" parent="OptionsContainer"]
-margin_left = 323.0
-margin_top = 275.0
-margin_right = 343.0
-margin_bottom = 326.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Apply" type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0
@@ -280,5 +249,4 @@ __meta__ = {
 [connection signal="pressed" from="OptionsContainer/SoundVolumeInc" to="." method="_on_SoundVolumeInc_pressed"]
 [connection signal="pressed" from="OptionsContainer/FullscreenVal" to="." method="_on_FullscreenVal_pressed"]
 [connection signal="pressed" from="OptionsContainer/VignetteVal" to="." method="_on_VignetteVal_pressed"]
-[connection signal="pressed" from="OptionsContainer/FilmGrainVal" to="." method="_on_FilmGrainVal_pressed"]
 [connection signal="pressed" from="Apply" to="." method="_on_Apply_pressed"]

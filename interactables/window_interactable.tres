@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://interactables/window_interactable.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+interactable_name = "Window"
+timeline_name = "office-1-window"
+color = Color( 0.145098, 0.25098, 0.392157, 1 )

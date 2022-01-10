@@ -1,0 +1,20 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1641765983.json",
+	"mirror_portraits": false,
+	"name": "WIFE",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -100,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/characters/family/wife.png"
+		}
+	],
+	"scale": 100
+}

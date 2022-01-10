@@ -4,4 +4,4 @@
 
 [resource]
 shader = ExtResource( 1 )
-shader_param/strength = 25.0
+shader_param/strength = 12.0

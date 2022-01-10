@@ -4,17 +4,17 @@
 	"display_name": "",
 	"display_name_bool": false,
 	"id": "character-1641620995.json",
-	"mirror_portraits": false,
+	"mirror_portraits": true,
 	"name": "Branch Officer Olivia Barbara Anime",
 	"nickname": "Olivia,Barbara,Barb,B.O.O.B.A.",
 	"nickname_bool": true,
-	"offset_x": 100,
-	"offset_y": -150,
+	"offset_x": 0,
+	"offset_y": -100,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://assets/characters/booba/booba.png"
 		}
 	],
-	"scale": 50
+	"scale": 100
 }

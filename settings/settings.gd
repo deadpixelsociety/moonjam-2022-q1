@@ -8,7 +8,6 @@ var voice_volume = 100
 var sound_volume = 100
 var fullscreen = true
 var vignette = true
-var film_grain = true
 
 
 func _ready():
@@ -26,11 +25,6 @@ func apply_settings():
 		Main.enable_vignette()
 	else:
 		Main.disable_vignette()
-	
-	if film_grain:
-		Main.enable_film_grain()
-	else:
-		Main.disable_film_grain()
 
 
 func save_settings():
@@ -42,7 +36,6 @@ func save_settings():
 		f.store_var(sound_volume)
 		f.store_var(fullscreen)
 		f.store_var(vignette)
-		f.store_var(film_grain)
 		f.close()
 
 
@@ -55,5 +48,4 @@ func _load_settings():
 		sound_volume = f.get_var()
 		fullscreen = f.get_var()
 		vignette = f.get_var()
-		film_grain = f.get_var()
 		f.close()

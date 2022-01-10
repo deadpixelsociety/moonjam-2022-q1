@@ -5,7 +5,6 @@ onready var _music_volume_val := $OptionsContainer/MusicVolumeVal
 onready var _sound_volume_val := $OptionsContainer/SoundVolumeVal
 onready var _fullscreen_val := $OptionsContainer/FullscreenVal
 onready var _vignette_val := $OptionsContainer/VignetteVal
-onready var _film_grain_val := $OptionsContainer/FilmGrainVal
 
 
 func _ready():
@@ -18,7 +17,6 @@ func _set_values():
 	_sound_volume_val.text = str(Settings.sound_volume)
 	_fullscreen_val.text = "ON" if Settings.fullscreen else "OFF"
 	_vignette_val.text = "ON" if Settings.vignette else "OFF"
-	_film_grain_val.text = "ON" if Settings.film_grain else "OFF"
 
 
 func _get_values():
@@ -27,7 +25,6 @@ func _get_values():
 	Settings.sound_volume = int(_sound_volume_val.text)
 	Settings.fullscreen = _fullscreen_val.text == "ON"
 	Settings.vignette = _vignette_val.text == "ON"
-	Settings.film_grain = _film_grain_val.text == "ON"
 
 
 func _on_Apply_pressed():
@@ -73,9 +70,4 @@ func _on_FullscreenVal_pressed():
 
 func _on_VignetteVal_pressed():
 	Settings.vignette = not Settings.vignette
-	_set_values()
-
-
-func _on_FilmGrainVal_pressed():
-	Settings.film_grain = not Settings.film_grain
 	_set_values()

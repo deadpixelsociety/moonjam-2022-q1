@@ -1,0 +1,29 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1641620862.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I trudged up the stairs and into Thoroughbred's office. It looked a lot different in the light of day, without his grinning face, cheap insults, and dead body stinking up the joint.\nNow that I knew what I was looking for, I could see it all. And unlike the cops, I had the picture from last night to help me search.\nBloodstains spattering from the swings and the impact, mixed with gravy that flew from the tray when I swung. Signs of the brief struggle when Thoroughbred panicked and stood, trying run from me. Same way he ran from the law.\nSame way I was running.\nThe old gut twisted again, and I wanted to spill it all over this office, from the shame and the rage. But I didn't have time. I had to find where I stashed that tray, and make sure I didn't miss anything else incriminating while I was it.\n\nI couldn't remember, not consciously. But part of me would know.\n"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641767605.json",
+		"name": "office-1"
+	}
+}
