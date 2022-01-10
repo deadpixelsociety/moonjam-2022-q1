@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource( 1 )
-interactable_name = "Diamond Studded SoundCloud Play Button"
+interactable_name = "SoundCloud Play Button"
 timeline_name = "office-1-button"
 color = Color( 0.772549, 0.772549, 0.772549, 1 )

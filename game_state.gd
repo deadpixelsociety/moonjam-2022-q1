@@ -1,5 +1,7 @@
 extends Node
 
+const SAVE_FILE = "user://save.dat"
+
 enum EVIDENCE {
 	TRACKS,
 	SCRAP,
@@ -16,8 +18,6 @@ enum LOCATION {
 	KITCHEN,
 	GROUNDS,
 	FOYER,
-	DINING_ROOM,
-	BATHROOM,
 	FRONT
 }
 
@@ -34,6 +34,12 @@ enum STATE {
 var evidence_found = {}
 var locations_visited = {}
 var state = STATE.FIND_EVIDENCE
+var current_location = LOCATION.NONE
+var game_loaded = false
+
+
+func _exit_tree():
+	save_state()
 
 
 func set_evidence_found(evidence: int):
@@ -74,3 +80,31 @@ func is_at_least_state(value: int) -> bool:
 
 func is_state_between(min_value: int, max_value: int) -> bool:
 	return state >= min_value and state <= max_value
+
+
+func save_state():
+	var f = File.new()
+	if f.open(SAVE_FILE, File.WRITE) == OK:
+		f.store_var(evidence_found)
+		f.store_var(locations_visited)
+		f.store_var(state)
+		f.store_var(current_location)
+		f.store_var(Dialogic.export())
+		f.close()
+
+
+func load_state():
+	var f = File.new()
+	if f.open(SAVE_FILE, File.READ) == OK:
+		evidence_found = f.get_var()
+		locations_visited = f.get_var()
+		state = f.get_var()
+		current_location = f.get_var()
+		Dialogic.import(f.get_var())
+		f.close()
+		game_loaded = true
+
+
+func has_save_state() -> bool:
+	var f = File.new()
+	return f.file_exists(SAVE_FILE)

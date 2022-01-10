@@ -4,7 +4,7 @@
 [ext_resource path="res://interactables/window_interactable.tres" type="Resource" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 89.0056
+radius = 201.122
 
 [node name="WindowObject" instance=ExtResource( 1 )]
 interactable = ExtResource( 2 )

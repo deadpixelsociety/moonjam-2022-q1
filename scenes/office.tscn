@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/office.gd" type="Script" id=2]
@@ -8,31 +8,38 @@
 [ext_resource path="res://interactables/window_object.tscn" type="PackedScene" id=6]
 [ext_resource path="res://interactables/framed_button_object.tscn" type="PackedScene" id=7]
 [ext_resource path="res://interactables/rug_object.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/scenes/office/office.png" type="Texture" id=9]
 
 [node name="Office" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 location = 1
 
+[node name="Office" type="Sprite" parent="Layers/BackgroundLayer" index="0"]
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Interactables" parent="Layers/MiddleObjects" index="0"]
 visible = true
 
 [node name="ChairObject" parent="Layers/MiddleObjects/Interactables" index="0" instance=ExtResource( 4 )]
-position = Vector2( -425, 141 )
+position = Vector2( -252, 123 )
 
 [node name="DeskObject" parent="Layers/MiddleObjects/Interactables" index="1" instance=ExtResource( 3 )]
-position = Vector2( 2, 10 )
+position = Vector2( -8, -12 )
 
 [node name="FramedButtonObject" parent="Layers/MiddleObjects/Interactables" index="2" instance=ExtResource( 7 )]
-position = Vector2( 3, -304 )
+position = Vector2( 265, -240 )
 
 [node name="PictureObject" parent="Layers/MiddleObjects/Interactables" index="3" instance=ExtResource( 5 )]
-position = Vector2( 270, 37 )
+position = Vector2( -425, -109 )
 
 [node name="RugObject" parent="Layers/MiddleObjects/Interactables" index="4" instance=ExtResource( 8 )]
-position = Vector2( 15, 282 )
+position = Vector2( -502, 257 )
 
 [node name="WindowObject" parent="Layers/MiddleObjects/Interactables" index="5" instance=ExtResource( 6 )]
-position = Vector2( -575, -121 )
+position = Vector2( 572, -145 )
 
 [node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
 title = "THOROUGHBRED'S OFFICE"

@@ -29,10 +29,6 @@ func set_location(location: int):
 			_grounds_loc.show()
 		GameState.LOCATION.FOYER:
 			_foyer_loc.show()
-		GameState.LOCATION.DINING_ROOM:
-			_dining_room_loc.show()
-		GameState.LOCATION.BATHROOM:
-			_bathroom_loc.show()
 		GameState.LOCATION.FRONT:
 			_front_loc.show()
 

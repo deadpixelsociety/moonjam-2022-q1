@@ -3,7 +3,6 @@ class_name Intro
 
 
 func _ready():
-	Audio.play_investigation_theme()
 	GameState.state = GameState.STATE.ROOM_INTRO
 
 

@@ -12,4 +12,18 @@ func interact(node: Node):
 
 
 func start_dialogue(node: Node, timeline_name: String):
-	node.get_tree().root.call_deferred("add_child", Dialogic.start(timeline_name))
+	if not timeline_name or timeline_name.empty():
+		return
+	var scene = _find_scene(node)
+	if not scene:
+		return
+	scene.start_dialogue(timeline_name)
+
+
+func _find_scene(node: Node):
+	var parent = node.get_parent() as Node
+	while parent:
+		if parent.has_method("start_dialogue"):
+			return parent
+		parent = parent.get_parent() as Node
+	return null

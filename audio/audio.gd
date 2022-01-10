@@ -39,5 +39,7 @@ func stop():
 
 
 func play_investigation_theme():
+	if _player.playing:
+		return
 	_player.stream = INVESTIGATION_THEME
 	_player.play()

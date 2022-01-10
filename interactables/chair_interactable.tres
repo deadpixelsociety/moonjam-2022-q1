@@ -6,4 +6,4 @@
 script = ExtResource( 1 )
 interactable_name = "Chair"
 timeline_name = "office-1-chair"
-color = Color( 0.501961, 0.294118, 0.0509804, 1 )
+color = Color( 0.364706, 0.364706, 0.364706, 1 )

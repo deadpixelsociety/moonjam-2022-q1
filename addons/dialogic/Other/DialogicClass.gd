@@ -186,7 +186,7 @@ static func export(dialog_node = null) -> Dictionary:
 	# return it
 	return {
 		'definitions': _get_definitions(),
-		'state': Engine.get_main_loop().get_meta('game_state'),
+		'state': Engine.get_main_loop().get_meta('game_state') if Engine.get_main_loop().has_meta('game_state') else {},
 		'dialog_state': current_dialog_info
 	}
 

@@ -5,6 +5,7 @@
 
 [node name="Confession" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
+location = 4
 show_map = false
 show_leave = false
 

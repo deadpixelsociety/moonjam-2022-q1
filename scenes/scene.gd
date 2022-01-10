@@ -38,6 +38,7 @@ func _ready():
 		hide_leave_button()
 		
 	GameState.set_location_visited(location)
+	GameState.current_location = location
 	EventBus.publish("location_changed", location)
 	EventBus.subscribe("interactable_clicked", self, "_on_interactable_clicked")
 

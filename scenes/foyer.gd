@@ -50,7 +50,7 @@ func _get_dialogue() -> String:
 			return "foyer-2"
 		GameState.STATE.FIND_EVIDENCE:
 			return "foyer-3"
-		GameState.STATE.TIME_TO_LEAVE:
+		_:
 			return "foyer-4"
 	return ""
 

@@ -4,7 +4,7 @@
 [ext_resource path="res://interactables/picture_interactable.tres" type="Resource" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 113.217
+radius = 64.9384
 
 [node name="PictureObject" instance=ExtResource( 1 )]
 interactable = ExtResource( 2 )

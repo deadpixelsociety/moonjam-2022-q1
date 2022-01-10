@@ -9,7 +9,7 @@
 
 [node name="ManorFront" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-location = 7
+location = 5
 
 [node name="ManorFront" type="Sprite" parent="Layers/BackgroundLayer" index="0"]
 texture = ExtResource( 3 )
