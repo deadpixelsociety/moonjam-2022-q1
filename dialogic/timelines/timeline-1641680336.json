@@ -98,7 +98,7 @@
 			"character": "character-1641620862.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You think I've gone soft?"
+			"text": "You sayin' this Dick's gone soft?"
 		},
 		{
 			"character": "character-1641623850.json",
@@ -122,7 +122,7 @@
 			"character": "character-1641623850.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Not anywhere we can see."
+			"text": "Or anywhere we can see, for that matter."
 		},
 		{
 			"character": "character-1641620862.json",
@@ -160,7 +160,7 @@
 			"character": "character-1641665865.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Just like that I knew the voice. Older than I remember, but still that same goddamn voice, and it pierced my hangover just like it perforated my eardrums."
+			"text": "I knew the voice. Older than I remember, but still that same goddamn voice, and it pierced my hangover just like it perforated my eardrums."
 		},
 		{
 			"action": "leaveall",
@@ -209,7 +209,7 @@
 			"character": "character-1641680283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "W-what? I-impossible!"
+			"text": "W...what?! I..impossible! After all my training?"
 		},
 		{
 			"character": "character-1641623850.json",
@@ -233,13 +233,13 @@
 			"character": "character-1641665865.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Damn, but I felt bad for the kid. Maybe I was getting soft, but he reminded me of Little Billy, still wide eyed, looking at the lights in the city instead of the darkness. Las Borpas was going to chew him up and spit him out, voracious for innocence and always hungry for more."
+			"text": "Damn, but I felt bad for the kid. Maybe I was getting soft, but he reminded me of Little Billy, still wide eyed, looking up at the lights of the city, instead of down at the darkness. Las Borpas was going to chew him up and spit him out. It devoured innocence, and it was always hungry for more."
 		},
 		{
 			"character": "character-1641665865.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Was I ever like that? I must have been. Learning the truth about this city--and myself--wouldn't have hurt so bad, if I wasn't."
+			"text": "Was I ever like that? I must have been. Learning the truth about this city, and myself, wouldn't have hurt so bad, if I wasn't."
 		},
 		{
 			"character": "character-1641620862.json",
@@ -251,7 +251,7 @@
 			"character": "character-1641680283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Yeah! And one day, I'm gonna be the chief of police!"
+			"text": "Yeah! And one day, I'm gonna be the Chief of Police!"
 		},
 		{
 			"character": "character-1641665865.json",
@@ -316,7 +316,7 @@
 			"character": "character-1641623850.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Thoroughbred was found dead in his office this morning, called in by the groundskeeper. Looked like trauma to the head, multiple strikes. Something thin and metal, but durable."
+			"text": "Thoroughbred was found dead in his office this morning, called in by the Groundskeeper. Looked like trauma to the head, multiple strikes. Something thin and metal, but durable."
 		},
 		{
 			"character": "character-1641620862.json",
@@ -364,7 +364,7 @@
 			"character": "character-1641665865.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "She was about to reply when Jesse came back from the kitchen with my coffee. He handed it to me like a puppy with a new toy.\n\nGod help me but I wanted to kick him."
+			"text": "She was about to reply when Jesse came back from the kitchen with my coffee. He handed it to me like a puppy with a new toy.\nGod help me but I wanted to kick him."
 		},
 		{
 			"action": "join",
@@ -390,19 +390,13 @@
 			"character": "character-1641623850.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh yeah, the cook is here. With some other guests, it turns out."
-		},
-		{
-			"character": "character-1641665865.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Now that was news."
+			"text": "Oh yeah, the cook is here. We've already asked him some questions."
 		},
 		{
 			"character": "character-1641620862.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You two stay out here. I'm gonna have a little chat with this cook."
+			"text": "Think I'm gonna take a crack at him. See what his story is."
 		}
 	],
 	"metadata": {

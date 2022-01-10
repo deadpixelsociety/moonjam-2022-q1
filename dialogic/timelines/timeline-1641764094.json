@@ -21,6 +21,28 @@
 			"text": "As I walked back inside, I couldn't help but think I should just give myself up. This wasn't me.\nI didn't always see eye to eye with the LBPD, with Olivia, with the Chief. I cut my share of corners. But I couldn't keep this up. I'd have to turn myself in, admit it. Tell Olivia, see the disappointment in her eyes. I'd stared down harder truths than that, hadn't I?\nAren't you forgetting something though, John? The wife. Little Billy. Leave them with a murderer for a husband and a father?\nNo. I couldn't do that. Steel your gut, stare down the barrel of your own poor decisions, and bite this goddamn bullet John Souls. You were never a perfect man. But at least you could be a free one.\nFor them.\nSpeaking of which, I should give them a call.\nBecause they're real.\n"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Sound",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://assets/sfx/ring.wav",
+			"volume": 10
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Come on, pick up."
+		},
+		{
+			"audio": "stop",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
 			"character": "character-1641620862.json",
 			"event_id": "dialogic_001",
 			"portrait": "",

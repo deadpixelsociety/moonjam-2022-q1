@@ -1,13 +1,26 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/caught.gd" type="Script" id=2]
+[ext_resource path="res://assets/scenes/jail/jail.png" type="Texture" id=3]
+[ext_resource path="res://assets/gfx/large_light.png" type="Texture" id=4]
 
 [node name="Caught" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-location = 4
+location = 6
 show_map = false
 show_leave = false
+
+[node name="Jail" type="Sprite" parent="Layers/BackgroundLayer" index="0"]
+scale = Vector2( 1, 1.05 )
+texture = ExtResource( 3 )
+
+[node name="Light2D" type="Light2D" parent="Layers/BackgroundLayer/Jail" index="0"]
+position = Vector2( 472, -292.381 )
+texture = ExtResource( 4 )
+texture_scale = 3.0
+color = Color( 0.972549, 0.917647, 0.611765, 1 )
+shadow_enabled = true
 
 [node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
 title = "HARD TIME"

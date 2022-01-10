@@ -51,7 +51,18 @@ func play_investigation_theme():
 	_playing_investigation = true
 	_playing_tension = false
 	_music_player.stream = INVESTIGATION_THEME
+	_music_player.volume_db = linear2db(0.01)
 	_music_player.play()
+	var anima = Anima.begin(self, "fade_in")
+	anima.then({
+		node = _music_player,
+		property = "volume_db",
+		animation = "fade_in",
+		from = linear2db(0.01),
+		to = linear2db(1.0),
+		duration = 2.0
+	})
+	anima.play()
 
 
 func play_tension_theme():

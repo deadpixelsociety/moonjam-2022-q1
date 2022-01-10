@@ -203,18 +203,13 @@
 			"value": "1"
 		},
 		{
-			"character": "",
+			"character": "character-1641620862.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Well, I know you weren't cooking for Mr. Thoroughbred, since he didn't eat your food. Pretty cushy job, getting paid to do work you were going to do anyway. "
 		},
 		{
 			"event_id": "dialogic_013"
-		},
-		{
-			"custom_slot": "",
-			"event_id": "dialogic_026",
-			"use_default_slot": true
 		},
 		{
 			"change_timeline": "timeline-1641704814.json",
@@ -397,11 +392,6 @@
 			"text": "That's Las Borpas for you Henry. It'll chew you up and spit you out like your own goddamn cooking."
 		},
 		{
-			"custom_slot": "",
-			"event_id": "dialogic_026",
-			"use_default_slot": true
-		},
-		{
 			"change_timeline": "timeline-1641700947.json",
 			"event_id": "dialogic_020"
 		},
@@ -439,11 +429,6 @@
 			"text": "No."
 		},
 		{
-			"custom_slot": "",
-			"event_id": "dialogic_026",
-			"use_default_slot": true
-		},
-		{
 			"change_timeline": "timeline-1641700947.json",
 			"event_id": "dialogic_020"
 		},
@@ -470,15 +455,16 @@
 			"character": "character-1641620862.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Absolutely not. Just like that, I was out of that kitchen like Henry out of a job."
+			"text": "Absolutely not."
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Just like that, I was out of that kitchen like Henry out of a job."
 		},
 		{
 			"event_id": "dialogic_013"
-		},
-		{
-			"custom_slot": "",
-			"event_id": "dialogic_026",
-			"use_default_slot": true
 		}
 	],
 	"metadata": {

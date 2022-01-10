@@ -54,9 +54,9 @@ __meta__ = {
 
 [node name="GroundsLoc" type="TextureRect" parent="."]
 visible = false
-margin_left = 352.0
+margin_left = 402.0
 margin_top = 80.0
-margin_right = 384.0
+margin_right = 434.0
 margin_bottom = 112.0
 rect_min_size = Vector2( 32, 32 )
 texture = ExtResource( 3 )
@@ -70,30 +70,6 @@ margin_left = 244.0
 margin_top = 284.0
 margin_right = 276.0
 margin_bottom = 316.0
-rect_min_size = Vector2( 32, 32 )
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="DiningRoomLoc" type="TextureRect" parent="."]
-visible = false
-margin_left = 419.0
-margin_top = 248.0
-margin_right = 451.0
-margin_bottom = 280.0
-rect_min_size = Vector2( 32, 32 )
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BathroomLoc" type="TextureRect" parent="."]
-visible = false
-margin_left = 86.0
-margin_top = 254.0
-margin_right = 118.0
-margin_bottom = 286.0
 rect_min_size = Vector2( 32, 32 )
 texture = ExtResource( 3 )
 __meta__ = {

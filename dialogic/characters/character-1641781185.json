@@ -9,12 +9,12 @@
 	"nickname": "Chugs,Kingpin",
 	"nickname_bool": true,
 	"offset_x": 0,
-	"offset_y": -100,
+	"offset_y": -70,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://assets/characters/chugs/chugs.png"
 		}
 	],
-	"scale": 100
+	"scale": 125
 }

@@ -5,8 +5,6 @@ onready var _office_loc := $OfficeLoc
 onready var _kitchen_loc := $KitchenLoc
 onready var _grounds_loc := $GroundsLoc
 onready var _foyer_loc := $FoyerLoc
-onready var _dining_room_loc := $DiningRoomLoc
-onready var _bathroom_loc := $BathroomLoc
 onready var _front_loc := $FrontLoc
 
 
@@ -38,8 +36,6 @@ func _hide_all():
 	_kitchen_loc.hide()
 	_grounds_loc.hide()
 	_foyer_loc.hide()
-	_dining_room_loc.hide()
-	_bathroom_loc.hide()
 	_front_loc.hide()
 
 

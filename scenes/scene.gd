@@ -224,11 +224,24 @@ func _show_characters():
 	})
 	anima.set_visibility_strategy(Anima.VISIBILITY.HIDDEN_AND_TRANSPARENT)
 	anima.play()
+	yield(anima, "animation_completed")
+	for child in _characters.get_children():
+		var character = child as SceneCharacterPlacement
+		if character:
+			character.monitoring = true
+			character.input_pickable = true
 
 
 func _hide_characters():
 	if not _characters.visible:
 		return
+	
+	for child in _characters.get_children():
+		var character = child as SceneCharacterPlacement
+		if character:
+			character.monitoring = false
+			character.input_pickable = false
+		
 	var anima = Anima.begin(self, "hide_characters")
 	anima.then({
 		node = _characters, 

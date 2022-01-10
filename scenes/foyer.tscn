@@ -71,13 +71,13 @@ __meta__ = {
 
 [node name="Chugs" parent="Layers/MiddleObjects/Characters" index="0" instance=ExtResource( 7 )]
 visible = false
-position = Vector2( -30, -30 )
+position = Vector2( 268, -60 )
 
 [node name="Booba" parent="Layers/MiddleObjects/Characters" index="1" instance=ExtResource( 5 )]
-position = Vector2( 190, -30 )
+position = Vector2( 64, -30 )
 
 [node name="JesseAnime" parent="Layers/MiddleObjects/Characters" index="2" instance=ExtResource( 6 )]
-position = Vector2( 390, -30 )
+position = Vector2( 480, -30 )
 
 [node name="SceneTitle" parent="Overlay/OverlayContainer" index="0"]
 title = "THE FOYER"

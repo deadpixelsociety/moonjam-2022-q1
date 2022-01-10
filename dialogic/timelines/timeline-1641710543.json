@@ -94,7 +94,7 @@
 			"character": "character-1641620862.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Not much, and hell no. Only thing I know is that he was here all night filming an episode of his cooking show, and he said he didn't hear a damn thing. Nobody coming in or out, and didn't mention the noise from upstairs."
+			"text": "Not much, and hell no. He was here all night filming an episode of his cooking show, and he said he didn't hear or see a damn thing. Nobody coming in or out."
 		},
 		{
 			"character": "character-1641680283.json",
@@ -107,12 +107,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "...\n\nNo. I wouldn't."
-		},
-		{
-			"character": "character-1641665865.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Call it what you want, but it sure as hell was."
 		},
 		{
 			"character": "character-1641620862.json",
@@ -160,7 +154,7 @@
 			"character": "character-1641623850.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The groundskeeper. He's been staying outside."
+			"text": "The Groundskeeper. He's been staying outside."
 		},
 		{
 			"character": "character-1641620862.json",

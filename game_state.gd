@@ -18,7 +18,8 @@ enum LOCATION {
 	KITCHEN,
 	GROUNDS,
 	FOYER,
-	FRONT
+	FRONT,
+	THE_END
 }
 
 enum STATE {
@@ -36,6 +37,7 @@ var locations_visited = {}
 var state = STATE.ROOM_INTRO
 var current_location = LOCATION.NONE
 var game_loaded = false
+var saw_intro = false
 
 
 func _exit_tree():

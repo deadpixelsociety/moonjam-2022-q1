@@ -5,16 +5,16 @@
 [ext_resource path="res://assets/characters/chugs/chugs.png" type="Texture" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 85.0
-height = 96.0
+radius = 100.0
+height = 144.0
 
 [node name="Chugs" instance=ExtResource( 1 )]
 character = ExtResource( 2 )
 
 [node name="Sprite" parent="." index="0"]
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
-position = Vector2( 0, 27 )
+position = Vector2( 1, 39 )
 shape = SubResource( 1 )

@@ -1,0 +1,10 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://assets/fonts/noir_bold.ttf" type="DynamicFontData" id=1]
+
+[resource]
+size = 96
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 96
+font_data = ExtResource( 1 )

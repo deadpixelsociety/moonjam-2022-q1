@@ -51,6 +51,7 @@ func _apply_interactable():
 		_sprite.texture = c.texture
 	if _tooltip:
 		_tooltip.text = c.interactable_name
+		_tooltip.minimum_size_changed()
 	interactable_name = c.interactable_name
 	tint = c.color
 
@@ -58,7 +59,10 @@ func _apply_interactable():
 func _move_tooltip(pos: Vector2):
 	if not _tooltip:
 		return
-	_tooltip.rect_global_position = pos + Vector2(32.0, 0.0)
+	var new_pos = pos + Vector2(32.0, 0.0)
+	if new_pos.x + _tooltip.rect_size.x > 640.0:
+		new_pos = pos - Vector2(32.0, 0.0) - Vector2(_tooltip.rect_size.x, 0.0)
+	_tooltip.rect_global_position = new_pos
 
 
 func _on_InteractableObject_input_event(viewport, event, shape_idx):

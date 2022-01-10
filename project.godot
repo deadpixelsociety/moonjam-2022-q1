@@ -154,6 +154,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://interactables/left_fence_interactable.gd"
 }, {
+"base": "Control",
+"class": "Logo",
+"language": "GDScript",
+"path": "res://logo.gd"
+}, {
 "base": "Scene",
 "class": "ManorFront",
 "language": "GDScript",
@@ -279,6 +284,7 @@ _global_script_class_icons={
 "JesseAnimeCharacter": "",
 "Kitchen": "",
 "LeftFenceInteractable": "",
+"Logo": "",
 "ManorFront": "",
 "Minimap": "",
 "Office": "",
@@ -303,8 +309,9 @@ _global_script_class_icons={
 [application]
 
 config/name="Soul of Las Borpas"
-config/description="Team Citizens Under Moon - MoonJam 2022 Q1 Entry"
+config/description="A meme noir visual novel by Team Citizens Under Moon for the MoonJam 2022 Q1: FACADE!"
 run/main_scene="res://start.tscn"
+boot_splash/image="res://assets/gfx/teamcum.png"
 config/icon="res://icon.png"
 
 [autoload]
