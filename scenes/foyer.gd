@@ -57,21 +57,25 @@ func _get_dialogue() -> String:
 
 func _on_GoKitchen_pressed():
 	if GameState.is_state(GameState.STATE.FIND_GROUNDS):
+		_leaving = false
 		start_dialogue("foyer-2-go-kitchen")
 
 
 func _on_GoUpstairs_pressed():
 	if GameState.is_state(GameState.STATE.FIND_GROUNDS):
+		_leaving = false
 		start_dialogue("foyer-2-go-upstairs")
 
 
 func _on_GoFront_pressed():
 	match GameState.state:
 		GameState.STATE.FIND_GROUNDS:
+			_leaving = false
 			start_dialogue("foyer-2-go-front")
 		GameState.STATE.TIME_TO_LEAVE:
 			if GameState.are_evidences_found([ GameState.EVIDENCE.SPOKE_WITH_BOOBA, GameState.EVIDENCE.SPOKE_WITH_CHUGS ]):
 				GameState.state = GameState.STATE.CAUGHT
+				Audio.play_tension_theme()
 				start_dialogue("foyer-4-leaving")
 			else:
 				_leaving = false

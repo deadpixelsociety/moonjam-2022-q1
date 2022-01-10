@@ -60,8 +60,13 @@ margin_right = 255.0
 margin_bottom = 499.0
 text = "QUIT"
 
+[connection signal="mouse_entered" from="ButtonContainer/StartGame" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/StartGame" to="." method="_on_StartGame_pressed"]
+[connection signal="mouse_entered" from="ButtonContainer/ContinueGame" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/ContinueGame" to="." method="_on_ContinueGame_pressed"]
+[connection signal="mouse_entered" from="ButtonContainer/Settings" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="mouse_entered" from="ButtonContainer/Credits" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/Credits" to="." method="_on_Credits_pressed"]
+[connection signal="mouse_entered" from="ButtonContainer/Quit" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/Quit" to="." method="_on_Quit_pressed"]

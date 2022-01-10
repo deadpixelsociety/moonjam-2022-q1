@@ -2,6 +2,10 @@ extends Scene
 class_name Caught
 
 
+func _ready():
+	Audio.play_investigation_theme()
+
+
 func _on_Caught_scene_ready():
 	start_dialogue("caught")
 

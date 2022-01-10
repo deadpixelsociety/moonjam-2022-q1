@@ -33,7 +33,7 @@ enum STATE {
 
 var evidence_found = {}
 var locations_visited = {}
-var state = STATE.FIND_EVIDENCE
+var state = STATE.ROOM_INTRO
 var current_location = LOCATION.NONE
 var game_loaded = false
 

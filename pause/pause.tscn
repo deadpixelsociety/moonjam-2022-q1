@@ -71,6 +71,9 @@ margin_right = 300.0
 margin_bottom = 301.0
 text = "QUIT GAME"
 
+[connection signal="mouse_entered" from="ButtonContainer/Resume" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="mouse_entered" from="ButtonContainer/Settings" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="mouse_entered" from="ButtonContainer/Quit" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/Quit" to="." method="_on_Quit_pressed"]

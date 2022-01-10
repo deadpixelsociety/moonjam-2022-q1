@@ -74,3 +74,7 @@ func _on_FullscreenVal_pressed():
 func _on_VignetteVal_pressed():
 	Settings.vignette = not Settings.vignette
 	_set_values()
+
+
+func _on_button_mouse_entered():
+	Audio.play_select()

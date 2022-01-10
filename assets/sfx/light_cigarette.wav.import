@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/light_cigarette.wav-f531dab703f188bd9fa1a963c6f3a4e6.sample"
+
+[deps]
+
+source_file="res://assets/sfx/light_cigarette.wav"
+dest_files=[ "res://.import/light_cigarette.wav-f531dab703f188bd9fa1a963c6f3a4e6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

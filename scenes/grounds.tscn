@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/grounds.gd" type="Script" id=1]
 [ext_resource path="res://scenes/scene.tscn" type="PackedScene" id=2]
@@ -12,10 +12,14 @@
 [ext_resource path="res://interactables/tent_object.tscn" type="PackedScene" id=10]
 [ext_resource path="res://interactables/left_fence_object.tscn" type="PackedScene" id=11]
 [ext_resource path="res://interactables/right_fence_object.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/sfx/fire.wav" type="AudioStream" id=13]
 
 [node name="Grounds" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
 location = 3
+
+[node name="Layers" parent="." index="1"]
+modulate = Color( 1, 1, 1, 1 )
 
 [node name="Grounds" type="Sprite" parent="Layers/BackgroundLayer" index="0"]
 texture = ExtResource( 3 )
@@ -64,6 +68,15 @@ position = Vector2( 118, 42 )
 texture = ExtResource( 5 )
 texture_scale = 2.0
 color = Color( 0.898039, 0.576471, 0.0156863, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fire" type="AudioStreamPlayer2D" parent="Layers/BackgroundLayer" index="1"]
+position = Vector2( 117, 43 )
+stream = ExtResource( 13 )
+autoplay = true
+bus = "Sound"
 __meta__ = {
 "_edit_lock_": true
 }

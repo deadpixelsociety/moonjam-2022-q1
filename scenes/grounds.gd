@@ -1,6 +1,9 @@
 extends Scene
 class_name Grounds
 
+func _ready():
+	Audio.play_investigation_theme()
+
 
 func _on_Grounds_scene_ready():
 	if GameState.is_state(GameState.STATE.FIND_GROUNDS):

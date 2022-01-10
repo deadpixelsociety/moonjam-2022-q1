@@ -78,6 +78,14 @@
 			"text": "Branch Officer Olivia Barbara Anime. Trouble on two legs. But those weren't the only two things about her that were dangerous. That's right. Her badge and her mind. As women went, she was as sharp as a fine cheddar, and just as dangerous for your heart."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Sound",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://assets/sfx/light_cigarette.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1641620862.json",
 			"event_id": "dialogic_001",
 			"portrait": "",

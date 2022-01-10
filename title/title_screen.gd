@@ -10,11 +10,13 @@ func _ready():
 
 
 func _on_StartGame_pressed():
+	Main.game_started = true
 	Main.switch_scene("res://scenes/intro.tscn")
 	queue_free()
 
 
 func _on_ContinueGame_pressed():
+	Main.game_started = true
 	GameState.load_state()
 	match GameState.current_location:
 		GameState.LOCATION.NONE:
@@ -44,3 +46,7 @@ func _on_Credits_pressed():
 
 func _on_Quit_pressed():
 	get_tree().quit()
+
+
+func _on_button_mouse_entered():
+	Audio.play_select()

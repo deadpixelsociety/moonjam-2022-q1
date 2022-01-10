@@ -70,7 +70,9 @@ ur mom[/center]
 [center]Car Door Closing: [url=\"https://freesound.org/people/NachtmahrTV/sounds/556690/\"]https://freesound.org/people/NachtmahrTV/sounds/556690/[/url]
 Car Driving Ambiance: [url=\"https://freesound.org/people/pulswelle/sounds/219245/\"]https://freesound.org/people/pulswelle/sounds/219245/[/url]
 Ringtone: [url=\"https://freesound.org/people/izalew/sounds/434877/\"]https://freesound.org/people/izalew/sounds/434877/[/url]
-Car Sound: [url=\"https://freesound.org/people/Frederik_Sunne/sounds/324138/[/center]\"]https://freesound.org/people/Frederik_Sunne/sounds/324138/[/url][/center]"
+Car Sound: [url=\"https://freesound.org/people/Frederik_Sunne/sounds/324138/\"]https://freesound.org/people/Frederik_Sunne/sounds/324138/[/url]
+Lighting Cigarette: [url=\"https://freesound.org/people/MikeNavajas/sounds/521483/\"]https://freesound.org/people/MikeNavajas/sounds/521483/[/url]
+Fire: [url=\"https://freesound.org/people/FractalStudios/sounds/363092/\"]https://freesound.org/people/FractalStudios/sounds/363092/[/url][/center]"
 text = "A
 Team Citizens Under Moon 
 Production
@@ -94,7 +96,9 @@ Assets
 Car Door Closing: https://freesound.org/people/NachtmahrTV/sounds/556690/
 Car Driving Ambiance: https://freesound.org/people/pulswelle/sounds/219245/
 Ringtone: https://freesound.org/people/izalew/sounds/434877/
-Car Sound: \"]https://freesound.org/people/Frederik_Sunne/sounds/324138/"
+Car Sound: https://freesound.org/people/Frederik_Sunne/sounds/324138/
+Lighting Cigarette: https://freesound.org/people/MikeNavajas/sounds/521483/
+Fire: https://freesound.org/people/FractalStudios/sounds/363092/"
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
@@ -115,4 +119,5 @@ __meta__ = {
 }
 
 [connection signal="meta_clicked" from="RichText" to="." method="_on_RichText_meta_clicked"]
+[connection signal="mouse_entered" from="Back" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

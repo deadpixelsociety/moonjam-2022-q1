@@ -8,3 +8,7 @@ func _on_RichText_meta_clicked(meta):
 
 func _on_Back_pressed():
 	Main.switch_ui("res://title/title_screen.tscn")
+
+
+func _on_button_mouse_entered():
+	Audio.play_select()

@@ -5,8 +5,6 @@ class_name Kitchen
 func _on_Kitchen_scene_ready():
 	if GameState.is_state(GameState.STATE.ROOM_INTRO):
 		start_dialogue("kitchen-1")
-	else:
-		pass
 
 
 func _on_timeline_end(timeline: String):

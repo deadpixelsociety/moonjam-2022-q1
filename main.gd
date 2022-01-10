@@ -1,12 +1,14 @@
 extends Node2D
 
+var game_started = false
+
 onready var _scene_container := $SceneContainer
 onready var _vignette := $VignetteLayer/Vignette
 onready var _ui_layer := $UILayer
 
 
 func _input(event):
-	if not get_tree().paused and Input.is_action_just_pressed("ui_cancel"):
+	if game_started and not get_tree().paused and Input.is_action_just_pressed("ui_cancel"):
 		pause_game()
 
 

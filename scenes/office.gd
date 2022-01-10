@@ -14,4 +14,11 @@ func _on_GoFoyer_pressed():
 		start_dialogue("grounds-1-need-evidence")
 	else:
 		GameState.state = GameState.STATE.TIME_TO_LEAVE
+		start_dialogue("office-1-finished")
+
+
+func _on_timeline_end(timeline_name: String):
+	._on_timeline_end(timeline_name)
+	if GameState.is_state(GameState.STATE.TIME_TO_LEAVE):
 		goto_scene("res://scenes/foyer.tscn")
+		

@@ -161,10 +161,46 @@
 			"text": "I reached down towards his desk, my hand closing around something thin and metal, but sturdy. A tray."
 		},
 		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "play_tray_hit",
+				"target_node_path": "Audio"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"character": "character-1641665865.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I swung, connected with his temple. The tittering madman, shocked into silence, tried to stand, but he was staggered, bleeding, stumbling. I swung again on crown of his head, bringing down on Thoroughbred the weight of a city he'd tried to put under his heel."
+			"text": "I swung, connected with his temple. The tittering madman, shocked into silence, tried to stand, but he was staggered, bleeding, stumbling."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "play_tray_hit",
+				"target_node_path": "Audio"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1641665865.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I swung again on crown of his head, bringing down on Thoroughbred the weight of a city he'd tried to put under his heel."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "play_tray_hit",
+				"target_node_path": "Audio"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"character": "character-1641665865.json",
@@ -197,10 +233,26 @@
 			"text": "I'd murdered Maximilian Thoroughbred, and then I ran, deep into the misty night of Las Borpas. When I finally found myself at home, who knows what time, I hit the bottle, hard, to send myself to sleep."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Sound",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://assets/sfx/ringtone.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1641665865.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Then I awoke to a phone call."
+		},
+		{
+			"audio": "stop",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
 		}
 	],
 	"metadata": {

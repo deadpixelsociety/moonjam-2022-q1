@@ -2,10 +2,12 @@ extends Scene
 class_name Confession
 
 
+func _ready():
+	Audio.play_tension_theme()
+
+
 func _on_Confession_scene_ready():
-	var dialogic = Dialogic.start("confession")
-	dialogic.connect("timeline_end", self, "_on_timeline_end")
-	get_tree().root.call_deferred("add_child", dialogic)
+	start_dialogue("confession")
 
 
 func _on_timeline_end(timeline_name: String):

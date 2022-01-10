@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/burp.wav-d8886a5b6bccfbe18b4a40eb04d9f966.sample"
+
+[deps]
+
+source_file="res://assets/sfx/burp.wav"
+dest_files=[ "res://.import/burp.wav-d8886a5b6bccfbe18b4a40eb04d9f966.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
